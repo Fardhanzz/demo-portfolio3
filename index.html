@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>SENJA Café &amp; Kitchen — Good Food. Good Company. Every Hour.</title>
+  <meta name="description" content="SENJA is an all-day contemporary neighborhood café on Jalan Riau, Bandung. Good food, good company, single-origin Indonesian coffees, and artisan hearth sourdough."/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#F7F1E7",
+              warm: "#F2EBE0",
+              terracotta: "#C86F45",
+              "terracotta-dark": "#A8532C",
+              charcoal: "#373329",
+              sage: "#7C8662",
+              butter: "#E2C99D",
+              muted: "#6B6458",
+              border: "#E5DEC9"
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="antialiased selection:bg-[#C86F45]/20 selection:text-[#C86F45]">
+
+  <!-- 1 & 2. Shared Site Header & Navigation Container -->
+  <div id="site-header-container"></div>
+
+  <main>
+    <!-- 3. EDITORIAL HERO SECTION -->
+    <section class="w-full relative bg-[#373329]">
+      <div class="w-full relative h-[65vh] min-h-[480px] max-h-[720px] overflow-hidden">
+        <img alt="SENJA conservatory dining space with terracotta clay tiles and natural sunbeams in Bandung" 
+             class="w-full h-full object-cover object-center filter contrast-[1.02] brightness-95" 
+             src="./images/interior.jpg"
+             onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1XLjKBEmEt_Q7DC4X64MoYgDhqTJmzYpYSWiif3D3BS88rBUT2UZABDfQGiA0a83CobnjvYRRrtFPqROFy9j9-9iUcpbrMQRj0hPQJ8AMp4uecnh8pfsRt6mLzm53WN9bYJPXDVO9fvgQWB43jAnnJXhLjJRz-kE4RBzb8Kw_WUF6uW34-PTXhSmqhanF1tWZd1gpawqa7NCR6kZvXtxGOKbrzNwSV0_JF-Yxgq2sKFYD7IZTaXp6_7w9y_'"/>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute bottom-6 left-6 md:left-12 text-[#F7F1E7] text-xs font-medium tracking-widest uppercase bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded border border-white/10">
+          Jalan Riau 84 • Citarum, Bandung
+        </div>
+      </div>
+
+      <!-- Hero Statement & CTAs -->
+      <div class="bg-[#F7F1E7] w-full border-b border-[#E5DEC9]">
+        <div class="max-w-4xl mx-auto px-6 pt-16 pb-16 text-center">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">An All-Day Neighborhood Sanctuary</span>
+          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[52px] leading-tight text-[#373329] font-normal tracking-tight mt-3">
+            Good Food. Good Company. Every Hour.
+          </h1>
+          <p class="mt-5 text-[#6B6458] text-base md:text-lg leading-relaxed font-light max-w-2xl mx-auto">
+            From your first coffee to a slow afternoon meal, find a little more room for the moments that matter.
+          </p>
+          
+          <!-- Two Prominent CTAs -->
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#C86F45] text-white text-xs font-semibold tracking-widest uppercase rounded hover:bg-[#A8532C] transition-all transform hover:-translate-y-0.5 shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C86F45]" 
+               href="/menu">
+              <span>Explore Our Menu</span>
+              <span class="text-sm" aria-hidden="true">→</span>
+            </a>
+            <a class="inline-flex items-center gap-2 px-8 py-3.5 border border-[#373329] text-[#373329] text-xs font-semibold tracking-widest uppercase rounded hover:bg-[#E2C99D]/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#373329]" 
+               href="/visit">
+              <span>Come Visit Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SHORT INTRODUCTION TO SENJA & ITS ALL-DAY CAFÉ CONCEPT -->
+    <section class="w-full px-6 py-16 md:py-24 max-w-7xl mx-auto" aria-labelledby="intro-heading">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Left: Brunch photography flatlay -->
+        <div class="lg:col-span-6">
+          <div class="relative overflow-hidden rounded-xl shadow-sm border border-[#E5DEC9]">
+            <img alt="Artisanal table spread with avocado sourdough tartine and coconut chia bowl" 
+                 class="w-full h-auto aspect-[4/3] object-cover" 
+                 src="./images/brunch.jpg"
+                 onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1XL5-2NgBZQBMEt5xkv_MCqMwWU-1s8NLL7GA8YVJgHCc2X8LQo7hCxPOWYizhY6XSjXAnUPC4CMIpWQyGll3VsfCcXaj3CJi9W8qdgMD4AjYE4Yp6Q8J86a-9_SksBfgmfTCvX2Tv2KMBmG4DXIn5SL_-Wr2kotVjWrZRTUFC4vS2t3lLFfWDi3jz_aaEiDF-PVnYl7p_BCo_ZaI4_CdRYBBaVWNstIL5d9OnNeeiYANuUO3roNdoJ5ZTg'"/>
+            <div class="absolute top-4 left-4 bg-[#F7F1E7]/95 backdrop-blur-sm px-3 py-1 text-[11px] uppercase tracking-wider font-semibold text-[#C86F45] rounded shadow-sm">
+              Citarum Local Life
+            </div>
+          </div>
+        </div>
+        <!-- Right: Concise concept narrative -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">The SENJA Concept</span>
+          <h2 id="intro-heading" class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#373329] font-normal leading-tight">
+            A Sun-Drenched Gathering Place in Historic Bandung
+          </h2>
+          <div class="space-y-4 text-[#6B6458] text-sm md:text-base leading-relaxed font-light">
+            <p>
+              SENJA is a warm, contemporary neighborhood café tucked behind Jalan Riau's old brickwork and leafy banana palms. Designed as an all-day sanctuary, we welcome morning coffee purists, midday remote workers, and friends gathering for golden-hour toasties.
+            </p>
+            <p>
+              Our kitchen celebrates West Java’s highland fertile soils—featuring single-origin beans roasted weekly in Bandung, 36-hour cold-fermented sourdough from our wood-fired hearth, and fresh seasonal harvests prepared daily.
+            </p>
+          </div>
+          <div class="pt-2">
+            <a href="/our-story" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C86F45] hover:text-[#A8532C] transition-colors underline underline-offset-4">
+              <span>Read Our Story &amp; Philosophy</span>
+              <span class="text-sm" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FEATURED MENU: 4 SIGNATURE ITEMS WITH DESCRIPTIONS & PRICES -->
+    <section class="w-full bg-[#F2EBE0] border-y border-[#E5DEC9] py-20 px-6" id="featured-menu" aria-labelledby="featured-menu-heading">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">From The Kitchen &amp; Brew Bar</span>
+          <h2 id="featured-menu-heading" class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal mt-1">
+            Featured Signatures
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6B6458] mt-2 font-light">
+            A small taste of our seasonal ledger. Prepared fresh with West Java harvests and Indonesian single origins. All prices in IDR net.
+          </p>
+        </div>
+
+        <div class="bg-[#F7F1E7] p-8 sm:p-12 rounded-xl border border-[#E5DEC9] shadow-sm divide-y divide-[#E5DEC9]">
+          <!-- Item 1 -->
+          <div class="menu-item-row py-6 first:pt-0">
+            <div class="flex items-baseline justify-between gap-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <a href="/menu" class="font-serif text-lg sm:text-xl text-[#373329] font-medium hover:text-[#C86F45] transition-colors">
+                  Toraja Sapan Honey Filter
+                </a>
+                <span class="text-[10px] uppercase tracking-wider bg-[#E5DEC9] text-[#373329] px-2 py-0.5 rounded font-semibold">Specialty V60</span>
+              </div>
+              <span class="font-medium text-[#C86F45] text-sm sm:text-base whitespace-nowrap">Rp 38.000</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#6B6458] mt-1.5 font-light leading-relaxed">
+              Notes of wild mountain honey, ripe peach blossom, and bright bergamot finish. Hand-poured with single-origin beans roasted weekly in-house.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="menu-item-row py-6">
+            <div class="flex items-baseline justify-between gap-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <a href="/menu" class="font-serif text-lg sm:text-xl text-[#373329] font-medium hover:text-[#C86F45] transition-colors">
+                  Avocado Dukkah Tartine &amp; Poached Egg
+                </a>
+                <span class="text-[10px] uppercase tracking-wider bg-[#C86F45]/15 text-[#C86F45] px-2 py-0.5 rounded font-semibold">House Specialty</span>
+              </div>
+              <span class="font-medium text-[#C86F45] text-sm sm:text-base whitespace-nowrap">Rp 62.000</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#6B6458] mt-1.5 font-light leading-relaxed">
+              Stoneground wild sourdough, crushed ripe Lembang avocado, soft-poached pasture egg, house toasted Egyptian dukkah spice, and micro-herbs.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="menu-item-row py-6">
+            <div class="flex items-baseline justify-between gap-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <a href="/menu" class="font-serif text-lg sm:text-xl text-[#373329] font-medium hover:text-[#C86F45] transition-colors">
+                  Smoked Brisket &amp; Sambal Matah Toastie
+                </a>
+                <span class="text-[10px] uppercase tracking-wider bg-[#C86F45]/15 text-[#C86F45] px-2 py-0.5 rounded font-semibold">Hearth Grilled</span>
+              </div>
+              <span class="font-medium text-[#C86F45] text-sm sm:text-base whitespace-nowrap">Rp 68.000</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#6B6458] mt-1.5 font-light leading-relaxed">
+              14-hour smoked beef brisket, fragrant shallot and lemongrass sambal matah, melted raclette cheese on thick wood-fired hearth milk bread.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="menu-item-row py-6 last:pb-0">
+            <div class="flex items-baseline justify-between gap-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <a href="/menu" class="font-serif text-lg sm:text-xl text-[#373329] font-medium hover:text-[#C86F45] transition-colors">
+                  Pandan Kaya Brioche Toast
+                </a>
+                <span class="text-[10px] uppercase tracking-wider bg-[#E2C99D]/40 text-[#6C5936] px-2 py-0.5 rounded font-semibold">Golden Hour</span>
+              </div>
+              <span class="font-medium text-[#C86F45] text-sm sm:text-base whitespace-nowrap">Rp 42.000</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#6B6458] mt-1.5 font-light leading-relaxed">
+              Slow-simmered suji and pandan leaf coconut custard, cold cultured French butter slab, and flaky Bali sea salt on warm hearth brioche.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="/menu" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C86F45] hover:text-[#A8532C] transition-colors underline underline-offset-4">
+            <span>Explore Complete Seasonal Menu</span>
+            <span class="text-sm" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. VISUAL SECTION: MOMENTS THROUGHOUT THE DAY (DAY-TO-DUSK) -->
+    <section class="w-full px-6 py-20 max-w-7xl mx-auto text-center" id="day-to-dusk" aria-labelledby="rhythm-heading">
+      <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">The Rhythms of Bandung</span>
+      <h2 id="rhythm-heading" class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal mt-1">
+        Moments Throughout the Day
+      </h2>
+      <p class="mt-3 text-sm text-[#6B6458] max-w-xl mx-auto font-light">
+        SENJA transforms naturally with the sun. Three distinct chapters designed to match every hour of your visit.
+      </p>
+
+      <!-- 3-Panel Progression Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+        <!-- Morning -->
+        <div class="bg-[#F2EBE0] p-8 rounded-xl border border-[#E5DEC9] flex flex-col justify-between hover:border-[#C86F45]/50 transition-colors shadow-sm">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-[#C86F45] mb-2 flex items-center justify-between">
+              <span>07:00 – 11:00</span>
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">wb_sunny</span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#373329] mb-3">Dawn &amp; Morning Filter</h3>
+            <p class="text-xs md:text-sm text-[#6B6458] leading-relaxed font-light">
+              Quiet courtyard morning light, single-origin Kalita pour-overs, fresh butter brioche, and morning journals.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] text-xs">
+            <span class="uppercase tracking-wider text-[#6B6458] font-medium text-[10px]">Suggested Order:</span>
+            <p class="font-medium text-[#373329] mt-0.5">Toraja Honey Filter &amp; Pandan Brioche</p>
+          </div>
+        </div>
+
+        <!-- Midday -->
+        <div class="bg-[#F2EBE0] p-8 rounded-xl border border-[#E5DEC9] flex flex-col justify-between hover:border-[#C86F45]/50 transition-colors shadow-sm">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-[#C86F45] mb-2 flex items-center justify-between">
+              <span>11:30 – 15:00</span>
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">lunch_dining</span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#373329] mb-3">Midday Gathering</h3>
+            <p class="text-xs md:text-sm text-[#6B6458] leading-relaxed font-light">
+              Bustling garden tables, crisp sourdough tartines, warm smoked brisket sandwiches, and chilled cascara spritzers.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] text-xs">
+            <span class="uppercase tracking-wider text-[#6B6458] font-medium text-[10px]">Suggested Order:</span>
+            <p class="font-medium text-[#373329] mt-0.5">Avocado Dukkah Tartine &amp; Chia Bowl</p>
+          </div>
+        </div>
+
+        <!-- Senja / Dusk -->
+        <div class="bg-[#F7F1E7] p-8 rounded-xl border-2 border-[#C86F45] flex flex-col justify-between shadow-sm relative">
+          <span class="absolute -top-3 right-6 bg-[#C86F45] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded">
+            Our Namesake
+          </span>
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-[#C86F45] mb-2 flex items-center justify-between">
+              <span>15:00 – 22:00</span>
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">wb_twilight</span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#373329] mb-3">Senja &amp; Twilight Hearth</h3>
+            <p class="text-xs md:text-sm text-[#6B6458] leading-relaxed font-light">
+              Bandung’s amber dusk, candlelit courtyard nooks, botanical tonics, savory toasties, and caramelized Basque cake.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] text-xs">
+            <span class="uppercase tracking-wider text-[#6B6458] font-medium text-[10px]">Suggested Order:</span>
+            <p class="font-medium text-[#373329] mt-0.5">Smoked Brisket &amp; Burnt Basque Cake</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GALLERY PREVIEW (WITH DIRECT LINK TO /gallery) -->
+    <section class="w-full bg-[#F2EBE0] border-y border-[#E5DEC9] py-16 px-6" aria-labelledby="gallery-preview-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Visual Sanctuary</span>
+            <h2 id="gallery-preview-heading" class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal mt-1">
+              Gallery Moments
+            </h2>
+          </div>
+          <a href="/gallery" class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#C86F45] hover:text-[#A8532C] transition-colors underline underline-offset-4">
+            <span>View Complete Gallery</span>
+            <span class="text-sm" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- 4 Curated Photo Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="/gallery" class="group relative rounded-lg overflow-hidden border border-[#E5DEC9] aspect-square bg-[#E5DEC9] block">
+            <img src="./images/coffee-table.jpg" alt="Courtyard morning coffee table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-[#F7F1E7] text-xs font-medium uppercase tracking-wider">Courtyard Morning</span>
+            </div>
+          </a>
+          <a href="/gallery" class="group relative rounded-lg overflow-hidden border border-[#E5DEC9] aspect-square bg-[#E5DEC9] block">
+            <img src="./images/brunch.jpg" alt="Avocado dukkah sourdough brunch tartine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-[#F7F1E7] text-xs font-medium uppercase tracking-wider">Hearth Brunch</span>
+            </div>
+          </a>
+          <a href="/gallery" class="group relative rounded-lg overflow-hidden border border-[#E5DEC9] aspect-square bg-[#E5DEC9] block">
+            <img src="./images/interior.jpg" alt="Limewash arches and conservatory greenery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-[#F7F1E7] text-xs font-medium uppercase tracking-wider">Limewash Conservatory</span>
+            </div>
+          </a>
+          <a href="/gallery" class="group relative rounded-lg overflow-hidden border border-[#E5DEC9] aspect-square bg-[#E5DEC9] block">
+            <img src="./images/coffee-table.jpg" alt="Flaky pain au chocolat and ceramic flat white" class="w-full h-full object-cover object-[68%_75%] group-hover:scale-105 transition-transform duration-700 ease-out"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-[#F7F1E7] text-xs font-medium uppercase tracking-wider">Pastry &amp; Roast</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. WHAT'S ON PREVIEW -->
+    <section class="w-full px-6 py-20 max-w-7xl mx-auto" id="events-preview" aria-labelledby="events-preview-heading">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Gatherings</span>
+        <h2 id="events-preview-heading" class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal mt-1">
+          What's Happening at SENJA
+        </h2>
+        <p class="text-xs sm:text-sm text-[#6B6458] mt-2 font-light">
+          Small-batch tastings, courtyard live acoustics, and warm daily oven drops.
+        </p>
+      </div>
+
+      <!-- Events 3 Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#F7F1E7] p-6 rounded-xl border border-[#E5DEC9] flex flex-col justify-between hover:border-[#C86F45]/40 transition-colors shadow-sm">
+          <div>
+            <div class="flex justify-between items-center text-xs text-[#6B6458] mb-3">
+              <span class="uppercase font-semibold tracking-wider text-[#C86F45]">Every Saturday</span>
+              <span>10:00 – 11:30 AM</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329] mb-2">Weekend Pour-Over Tasting Flight</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              Explore 3 rare West Java Priangan micro-lots alongside our head roaster. Understand wash methods and fermentation terroir.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] flex justify-between items-center text-xs font-semibold">
+            <span class="text-[#373329]">Free Entry</span>
+            <span class="text-[#C86F45]">8 Seats Max</span>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F1E7] p-6 rounded-xl border border-[#E5DEC9] flex flex-col justify-between hover:border-[#C86F45]/40 transition-colors shadow-sm">
+          <div>
+            <div class="flex justify-between items-center text-xs text-[#6B6458] mb-3">
+              <span class="uppercase font-semibold tracking-wider text-[#C86F45]">Every Friday Dusk</span>
+              <span>17:30 – 19:30 PM</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329] mb-2">Sunset Acoustic in the Garden</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              Unplugged nylon guitar and bossa nova sets as courtyard lanterns illuminate. Pair with botanical tonics and warm toasties.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] flex justify-between items-center text-xs font-semibold">
+            <span class="text-[#373329]">Courtyard</span>
+            <span class="text-[#C86F45]">No Ticket Needed</span>
+          </div>
+        </div>
+
+        <div class="bg-[#F7F1E7] p-6 rounded-xl border border-[#E5DEC9] flex flex-col justify-between hover:border-[#C86F45]/40 transition-colors shadow-sm">
+          <div>
+            <div class="flex justify-between items-center text-xs text-[#6B6458] mb-3">
+              <span class="uppercase font-semibold tracking-wider text-[#C86F45]">Daily at 14:00</span>
+              <span>Afternoon Bake</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329] mb-2">Fresh Oven Drop: Pandan Choux</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              Warm craquelin choux pastry filled with freshly whipped cold pandan cream and molten salted palm sugar core.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#E5DEC9] flex justify-between items-center text-xs font-semibold">
+            <span class="text-[#373329]">Rp 32.000 / pc</span>
+            <span class="text-[#C86F45]">40 Pieces Daily</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="/whats-on" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C86F45] hover:text-[#A8532C] transition-colors underline underline-offset-4">
+          <span>See All Gatherings &amp; Calendar</span>
+          <span class="text-sm" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 9. VISIT PREVIEW -->
+    <section class="w-full bg-[#F2EBE0] border-t border-[#E5DEC9] py-16 px-6" id="visit-preview" aria-labelledby="visit-preview-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-[#F7F1E7] rounded-xl border border-[#E5DEC9] overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-12">
+          
+          <div class="lg:col-span-5 p-8 lg:p-12 space-y-6 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Find Us in Citarum</span>
+              <h2 id="visit-preview-heading" class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal mt-1">
+                Plan Your Visit
+              </h2>
+              
+              <div class="mt-6 space-y-4 text-xs sm:text-sm text-[#6B6458]">
+                <div>
+                  <p class="font-semibold text-[#373329] uppercase tracking-wider text-xs">Sanctuary Address</p>
+                  <p class="mt-1 text-[#373329] font-medium">Jl. Riau (LLRE Martadinata) No. 84</p>
+                  <p>Citarum, Bandung Wetan, Jawa Barat 40115</p>
+                </div>
+
+                <div class="pt-2 border-t border-[#E5DEC9]">
+                  <p class="font-semibold text-[#373329] uppercase tracking-wider text-xs">Hours of Hospitality</p>
+                  <p class="mt-1 flex justify-between text-[#373329]">
+                    <span>Monday – Thursday</span>
+                    <span>07:00 – 21:00</span>
+                  </p>
+                  <p class="flex justify-between text-[#373329]">
+                    <span>Friday – Sunday</span>
+                    <span>07:00 – 22:00</span>
+                  </p>
+                </div>
+
+                <div class="pt-2 border-t border-[#E5DEC9]">
+                  <p class="font-semibold text-[#373329] uppercase tracking-wider text-xs">Good to Know</p>
+                  <p class="mt-1">Walk-ins always welcome. Courtyard dog-friendly. Bike racks &amp; valet parking available.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-3">
+              <a class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-[#373329] text-white text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#C86F45] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C86F45]" 
+                 href="tel:+62224239800">
+                <span class="material-symbols-outlined text-[15px]" aria-hidden="true">call</span>
+                <span>Call Front Desk</span>
+              </a>
+              <a class="inline-flex items-center gap-1.5 px-4 py-2.5 border border-[#373329] text-[#373329] text-xs font-semibold uppercase tracking-wider rounded hover:bg-[#E5DEC9] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#373329]" 
+                 href="/visit">
+                <span class="material-symbols-outlined text-[15px]" aria-hidden="true">directions</span>
+                <span>Visit Details &amp; Directions</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Photo Map Visual -->
+          <div class="lg:col-span-7 relative min-h-[300px] lg:min-h-[420px] bg-[#373329]">
+            <img alt="Inside SENJA courtyard sanctuary" 
+                 class="w-full h-full object-cover filter brightness-90" 
+                 src="./images/interior.jpg"
+                 onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1XLjKBEmEt_Q7DC4X64MoYgDhqTJmzYpYSWiif3D3BS88rBUT2UZABDfQGiA0a83CobnjvYRRrtFPqROFy9j9-9iUcpbrMQRj0hPQJ8AMp4uecnh8pfsRt6mLzm53WN9bYJPXDVO9fvgQWB43jAnnJXhLjJRz-kE4RBzb8Kw_WUF6uW34-PTXhSmqhanF1tWZd1gpawqa7NCR6kZvXtxGOKbrzNwSV0_JF-Yxgq2sKFYD7IZTaXp6_7w9y_'"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white text-xs backdrop-blur-sm bg-black/40 p-4 rounded border border-white/10 flex items-center justify-between">
+              <div>
+                <p class="font-serif text-base font-medium">SENJA Bandung</p>
+                <p class="text-white/80 text-[11px]">Next to Citarum historic shaded park, 5 mins from Gedung Sate</p>
+              </div>
+              <span class="px-2.5 py-1 bg-[#C86F45] text-[10px] font-bold uppercase tracking-wider rounded">Open Today</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Shared Site Footer Container -->
+  <div id="site-footer-container"></div>
+
+  <!-- Shared Toast Container for Newsletter -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderHeader('/');
+      renderFooter();
+      renderToast();
+      initGlobalInteractions();
+    });
+  </script>
+</body>
+</html>

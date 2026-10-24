@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>What's On — Good Things Are Happening — SENJA Café &amp; Kitchen</title>
+  <meta name="description" content="Showcasing concept gatherings, seasonal menus, and community experiences at SENJA Café & Kitchen on Jalan Riau, Bandung."/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#F7F1E7",
+              warm: "#F2EBE0",
+              terracotta: "#C86F45",
+              "terracotta-dark": "#A8532C",
+              charcoal: "#373329",
+              sage: "#7C8662",
+              butter: "#E2C99D",
+              muted: "#6B6458",
+              border: "#E5DEC9"
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="antialiased selection:bg-[#C86F45]/20 selection:text-[#C86F45] bg-[#F7F1E7] text-[#373329] min-h-screen flex flex-col justify-between">
+
+  <!-- 1. Shared Header Container -->
+  <div id="site-header-container"></div>
+
+  <!-- 2. Editorial Hero Header Container (Pre-rendered & JS Hydrated) -->
+  <div id="page-hero-container">
+    <div class="w-full bg-[#F2EBE0] border-b border-[#E5DEC9] py-12 md:py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <nav class="text-xs uppercase tracking-widest text-[#6B6458] mb-4 flex items-center" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-[#C86F45] transition-colors">Home</a>
+          <span class="text-[#E5DEC9] mx-1.5" aria-hidden="true">/</span>
+          <span class="text-[#373329] font-medium">What's On</span>
+        </nav>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Gatherings &amp; Seasonal Calendar</span>
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl text-[#373329] font-normal tracking-tight mt-1">
+          Good Things Are Happening.
+        </h1>
+        <p class="mt-4 text-[#6B6458] text-sm md:text-base max-w-2xl font-light leading-relaxed">
+          A living calendar of slow Sunday brunches, casual morning cuppings, and twilight seasonal menus in our sunlit Bandung sanctuary.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- 3. Short Introduction to Events & Seasonal Experiences -->
+    <section class="py-12 md:py-16 px-6 border-b border-[#E5DEC9] bg-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-[11px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Life at the Sanctuary</span>
+            <h2 class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal leading-snug">
+              Every week has its rhythm — from unhurried Sunday tables to quiet morning coffee cuppings.
+            </h2>
+            <p class="text-[#6B6458] text-sm md:text-base font-light leading-relaxed">
+              At SENJA, gatherings are an extension of our everyday kitchen and espresso bar. We curate intimate concept sessions to celebrate Indonesian smallholder coffees, wood-fired hearth cooking, and Bandung's warm creative community. 
+            </p>
+          </div>
+          <div class="md:col-span-4 bg-[#F2EBE0] p-6 rounded-xl border border-[#E5DEC9] space-y-3">
+            <div class="flex items-center gap-2 text-[#C86F45]">
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">info</span>
+              <span class="text-[10px] font-semibold uppercase tracking-widest text-[#373329]">Concept Experience Note</span>
+            </div>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              All events showcased here are fictional concepts crafted for this web design portfolio demonstration. No real ticket sales or automated online bookings take place.
+            </p>
+            <a href="#how-to-learn-more" class="inline-flex items-center gap-1.5 text-xs text-[#C86F45] font-medium hover:underline pt-1">
+              <span>How our events work</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Event Section: Sunday Slow Brunch -->
+    <section id="sunday-slow-brunch" class="py-16 px-6 bg-[#F2EBE0] border-b border-[#E5DEC9]">
+      <div class="max-w-5xl mx-auto space-y-8">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#E5DEC9] pb-4">
+          <div>
+            <span class="text-[10px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold block">Weekly Featured Ritual</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal mt-1">Featured Concept Gathering</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-[#C86F45]/10 text-[#C86F45] rounded-full text-xs font-medium border border-[#C86F45]/20 self-start sm:self-auto">
+            <span class="w-2 h-2 rounded-full bg-[#C86F45] animate-pulse" aria-hidden="true"></span>
+            Weekly Concept Highlight
+          </span>
+        </div>
+
+        <!-- Featured Card Layout -->
+        <article class="bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-0">
+          <!-- Large Editorial Image -->
+          <div class="lg:col-span-7 relative min-h-[320px] lg:min-h-[460px] overflow-hidden bg-[#373329]">
+            <img 
+              src="./images/brunch.jpg" 
+              alt="Family-style Sunday Slow Brunch spread with poached egg sourdough tartines, fresh fruit bowls, and filter coffee at SENJA"
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:hidden"></div>
+            <div class="absolute bottom-4 left-4 lg:hidden text-white">
+              <span class="text-[10px] uppercase tracking-widest px-2.5 py-1 bg-[#C86F45] font-semibold rounded">
+                Sunday Slow Brunch
+              </span>
+            </div>
+          </div>
+
+          <!-- Event Details & Narrative -->
+          <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-0.5 bg-[#C86F45]/15 text-[#C86F45] rounded">
+                  Weekly Gathering
+                </span>
+                <span class="text-[10px] uppercase tracking-wider text-[#6B6458] bg-[#E5DEC9]/50 px-2 py-0.5 rounded">
+                  Fictional Concept
+                </span>
+              </div>
+
+              <h3 class="font-serif text-2xl sm:text-3xl text-[#373329] font-medium leading-tight">
+                Sunday Slow Brunch
+              </h3>
+
+              <div class="space-y-2 text-xs text-[#6B6458] border-y border-[#E5DEC9] py-3">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-base text-[#C86F45]" aria-hidden="true">schedule</span>
+                  <span class="font-medium text-[#373329]">Every Sunday • 10:00 AM – 14:00 PM</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-base text-[#C86F45]" aria-hidden="true">location_on</span>
+                  <span>Courtyard Garden &amp; Conservatory</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-base text-[#C86F45]" aria-hidden="true">payments</span>
+                  <span class="font-medium text-[#373329]">Concept Tasting Set: Rp 145.000 / guest</span>
+                </div>
+              </div>
+
+              <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+                An extended Sunday morning centered on connection and calm. A progressive family-style spread of warm wild sourdough, seasonal fruit bowls, pasture egg tartines, and free-flowing single-origin filter coffee, soundtracked by soft acoustic bossa nova under courtyard tropical foliage.
+              </p>
+
+              <!-- Inclusions List -->
+              <div class="bg-[#F2EBE0] p-4 rounded-lg border border-[#E5DEC9]/80 space-y-2">
+                <span class="text-[10px] uppercase tracking-widest font-semibold text-[#373329] block">Concept Experience Includes</span>
+                <ul class="text-xs text-[#6B6458] space-y-1 list-disc list-inside font-light">
+                  <li>4 shared tasting plates &amp; fresh stoneground sourdough</li>
+                  <li>Unlimited batch brew single-origin filter coffee</li>
+                  <li>Reserved courtyard conservatory table</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Action & Disclaimer -->
+            <div class="pt-4 border-t border-[#E5DEC9] space-y-3">
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a href="/visit" class="px-5 py-3 bg-[#C86F45] text-white text-xs font-semibold uppercase tracking-wider rounded text-center hover:bg-[#A8532C] transition-colors shadow-sm">
+                  Plan a Visit to SENJA
+                </a>
+                <a href="#how-to-learn-more" class="px-5 py-3 border border-[#373329] text-[#373329] text-xs font-semibold uppercase tracking-wider rounded text-center hover:bg-[#E5DEC9] transition-colors">
+                  How Inquiries Work
+                </a>
+              </div>
+              <p class="text-[10px] text-[#6B6458]/80 italic">
+                * Creative concept showcase for design portfolio demonstration. No real bookings or payment required.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. Additional Event Cards & Editorial List with Working Category Filters -->
+    <section class="py-16 px-6 bg-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto space-y-8">
+        
+        <!-- Section Header & Filter Controls -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#E5DEC9] pb-6">
+          <div>
+            <span class="text-[10px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">All Gatherings</span>
+            <h2 class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal mt-1">Calendar &amp; Concept Sessions</h2>
+            <p class="text-xs sm:text-sm text-[#6B6458] font-light mt-1 max-w-lg">
+              Explore our fictional concept calendar. Filter by gathering type to discover morning cuppings, weekend brunches, or twilight hearth dinners.
+            </p>
+          </div>
+
+          <!-- Working Category Filter Controls -->
+          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Event category filters">
+            <button 
+              type="button" 
+              data-filter="all" 
+              class="event-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium transition-all bg-[#373329] text-[#F7F1E7] border border-[#373329] shadow-sm cursor-pointer"
+              aria-pressed="true">
+              All Gatherings (<span id="count-all">3</span>)
+            </button>
+            <button 
+              type="button" 
+              data-filter="brunch" 
+              class="event-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium transition-all bg-[#F2EBE0] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              Weekend Brunch
+            </button>
+            <button 
+              type="button" 
+              data-filter="coffee" 
+              class="event-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium transition-all bg-[#F2EBE0] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              Coffee Sessions
+            </button>
+            <button 
+              type="button" 
+              data-filter="dinner" 
+              class="event-filter-btn px-3.5 py-1.5 rounded-full text-xs font-medium transition-all bg-[#F2EBE0] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              Special Dinners
+            </button>
+          </div>
+        </div>
+
+        <!-- Events Cards Grid Container (Pre-rendered for immediate SEO & Fast Paint) -->
+        <div id="events-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Event 1: Sunday Slow Brunch -->
+          <article id="sunday-slow-brunch-card" class="event-card-item bg-[#F2EBE0] rounded-xl border border-[#E5DEC9] overflow-hidden flex flex-col justify-between hover:border-[#C86F45]/50 transition-all duration-300 shadow-sm group" data-category="brunch">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-[#373329]">
+                <img 
+                  src="./images/brunch.jpg" 
+                  alt="Sunday Slow Brunch at SENJA Café &amp; Kitchen" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                    Featured Concept Gathering
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="text-[9px] uppercase tracking-wider font-medium px-2 py-0.5 bg-[#C86F45] text-white rounded">
+                    Weekend Brunch
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 space-y-3">
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5 font-medium">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">schedule</span>
+                  <span>Every Sunday • 10:00 AM – 14:00 PM</span>
+                </div>
+
+                <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                  Sunday Slow Brunch
+                </h3>
+
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">location_on</span>
+                  <span>Courtyard Garden &amp; Conservatory</span>
+                </div>
+
+                <p class="text-xs text-[#6B6458] leading-relaxed font-light pt-1">
+                  An extended Sunday morning centered on connection and calm. A progressive family-style spread of warm wild sourdough, seasonal fruit bowls, pasture egg tartines, and free-flowing single-origin filter coffee.
+                </p>
+
+                <div class="pt-2 text-[11px] text-[#373329] bg-[#E5DEC9]/40 p-2.5 rounded border border-[#E5DEC9]/80">
+                  <span class="font-semibold block text-[10px] uppercase tracking-wider text-[#6B6458]">Concept Details:</span>
+                  <span class="font-light">Includes 4 shared tasting plates, unlimited batch brew filter coffee, and reserved courtyard seating. Concept event for portfolio demonstration.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 mt-4">
+              <div class="pt-4 border-t border-[#E5DEC9] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <span class="text-[9px] uppercase tracking-widest text-[#6B6458] block">Example Pricing</span>
+                  <span class="text-xs font-semibold text-[#373329]">Concept Tasting Set: Rp 145.000 / guest</span>
+                </div>
+                <a href="#how-to-learn-more" class="inline-flex items-center justify-center gap-1 text-xs font-semibold text-[#C86F45] hover:text-[#A8532C] transition-colors py-1">
+                  <span>How to Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2: Coffee & Conversations -->
+          <article id="coffee-conversations-card" class="event-card-item bg-[#F2EBE0] rounded-xl border border-[#E5DEC9] overflow-hidden flex flex-col justify-between hover:border-[#C86F45]/50 transition-all duration-300 shadow-sm group" data-category="coffee">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-[#373329]">
+                <img 
+                  src="./images/coffee-table.jpg" 
+                  alt="Coffee &amp; Conversations at SENJA Café &amp; Kitchen" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                    Concept Community Session
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="text-[9px] uppercase tracking-wider font-medium px-2 py-0.5 bg-[#C86F45] text-white rounded">
+                    Coffee Sessions
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 space-y-3">
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5 font-medium">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">schedule</span>
+                  <span>First Saturday of the Month • 10:00 – 11:30 AM</span>
+                </div>
+
+                <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                  Coffee &amp; Conversations
+                </h3>
+
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">location_on</span>
+                  <span>Brew Bar Counter</span>
+                </div>
+
+                <p class="text-xs text-[#6B6458] leading-relaxed font-light pt-1">
+                  An informal morning cupping exploring the stories behind Indonesian smallholder roasts. Taste three distinct processing methods side-by-side, learn about Priangan highland micro-climates, and share quiet conversation over warm ceramic cups.
+                </p>
+
+                <div class="pt-2 text-[11px] text-[#373329] bg-[#E5DEC9]/40 p-2.5 rounded border border-[#E5DEC9]/80">
+                  <span class="font-semibold block text-[10px] uppercase tracking-wider text-[#6B6458]">Concept Details:</span>
+                  <span class="font-light">Small-group demonstration tasting led by head barista. 8 conceptual seats at the brew bar.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 mt-4">
+              <div class="pt-4 border-t border-[#E5DEC9] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <span class="text-[9px] uppercase tracking-widest text-[#6B6458] block">Example Pricing</span>
+                  <span class="text-xs font-semibold text-[#373329]">Free Community Session (Concept)</span>
+                </div>
+                <a href="#how-to-learn-more" class="inline-flex items-center justify-center gap-1 text-xs font-semibold text-[#C86F45] hover:text-[#A8532C] transition-colors py-1">
+                  <span>How to Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3: Seasonal Table: A Special Menu -->
+          <article id="seasonal-table-card" class="event-card-item bg-[#F2EBE0] rounded-xl border border-[#E5DEC9] overflow-hidden flex flex-col justify-between hover:border-[#C86F45]/50 transition-all duration-300 shadow-sm group" data-category="dinner">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-[#373329]">
+                <img 
+                  src="./images/interior.jpg" 
+                  alt="Seasonal Table: A Special Menu at SENJA Café &amp; Kitchen" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                    Concept Special Dinner
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="text-[9px] uppercase tracking-wider font-medium px-2 py-0.5 bg-[#C86F45] text-white rounded">
+                    Special Dinners
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-6 space-y-3">
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5 font-medium">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">schedule</span>
+                  <span>Quarterly Twilight Sessions • 17:30 – 21:00 PM</span>
+                </div>
+
+                <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                  Seasonal Table: A Special Menu
+                </h3>
+
+                <div class="text-[11px] text-[#6B6458] flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm text-[#C86F45]" aria-hidden="true">location_on</span>
+                  <span>Wood-Fired Hearth Room</span>
+                </div>
+
+                <p class="text-xs text-[#6B6458] leading-relaxed font-light pt-1">
+                  An intimate four-course twilight dining experience inspired by the transition of Bandung's golden hour. Wood-fired vegetables, hearth-smoked brisket, hand-simmered botanical reductions, and caramelized Basque bakes served at our communal teak table.
+                </p>
+
+                <div class="pt-2 text-[11px] text-[#373329] bg-[#E5DEC9]/40 p-2.5 rounded border border-[#E5DEC9]/80">
+                  <span class="font-semibold block text-[10px] uppercase tracking-wider text-[#6B6458]">Concept Details:</span>
+                  <span class="font-light">4 courses paired with seasonal botanical zero-proof spritzers. Concept showcase for portfolio demonstration.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 mt-4">
+              <div class="pt-4 border-t border-[#E5DEC9] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <span class="text-[9px] uppercase tracking-widest text-[#6B6458] block">Example Pricing</span>
+                  <span class="text-xs font-semibold text-[#373329]">Concept Set: Rp 185.000 / guest</span>
+                </div>
+                <a href="#how-to-learn-more" class="inline-flex items-center justify-center gap-1 text-xs font-semibold text-[#C86F45] hover:text-[#A8532C] transition-colors py-1">
+                  <span>How to Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Filter Empty State (Hidden by default) -->
+        <div id="filter-empty-state" class="hidden text-center py-12 bg-[#F2EBE0] rounded-xl border border-dashed border-[#E5DEC9]">
+          <p class="font-serif text-xl text-[#373329]">No events match this filter</p>
+          <p class="text-xs text-[#6B6458] mt-1">Please select "All Gatherings" to browse the full calendar.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Seasonal Menu Highlights -->
+    <section class="py-16 px-6 bg-[#373329] text-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto space-y-10">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end border-b border-white/10 pb-8">
+          <div class="md:col-span-8 space-y-3">
+            <span class="text-[10px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Kitchen &amp; Hearth Drops</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#F7F1E7] font-normal">
+              Seasonal Menu Highlights
+            </h2>
+            <p class="text-xs sm:text-sm text-white/70 leading-relaxed font-light max-w-xl">
+              Every season, our hearth kitchen and brew bar collaborate with West Java highland growers, tea pluckers, and honey foragers to introduce limited drops that capture Bandung's crisp mountain climate.
+            </p>
+          </div>
+          <div class="md:col-span-4 md:text-right">
+            <a href="/menu" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C86F45] text-white text-xs font-semibold tracking-wider uppercase rounded hover:bg-[#A8532C] transition-colors shadow-sm">
+              <span>View Full Menu</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 Seasonal Items Grid (Pre-rendered & Data-backed) -->
+        <div id="seasonal-highlights-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#C86F45]/60 transition-colors">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-[9px] uppercase tracking-widest text-[#C86F45] font-semibold">Limited Seasonal Batch</span>
+                <span class="text-[10px] uppercase text-white/50">Cold Botanical Brew</span>
+              </div>
+              <h3 class="font-serif text-xl text-white font-medium">Sunlit Cascara &amp; Hibiscus Spritzer</h3>
+              <p class="text-xs text-white/70 font-light leading-relaxed">
+                Sun-dried coffee cherry cascara from Pangalengan highland estates, slow-steeped cold with wild Roselle hibiscus, fresh calamansi citrus, and mountain sparkling water.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-sm font-semibold text-[#E2C99D]">Rp 36.000</span>
+              <a href="/menu" class="text-xs text-[#C86F45] hover:text-[#E2C99D] transition-colors flex items-center gap-1">
+                <span>View on Menu</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#C86F45]/60 transition-colors">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-[9px] uppercase tracking-widest text-[#C86F45] font-semibold">Seasonal Lunch Feature</span>
+                <span class="text-[10px] uppercase text-white/50">Hearth Kitchen</span>
+              </div>
+              <h3 class="font-serif text-xl text-white font-medium">Smoked Brisket &amp; Sambal Matah Toastie</h3>
+              <p class="text-xs text-white/70 font-light leading-relaxed">
+                14-hour applewood smoked beef brisket, hand-pounded fragrant shallot and lemongrass sambal matah, melted raclette cheese on thick wild sourdough.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-sm font-semibold text-[#E2C99D]">Rp 68.000</span>
+              <a href="/menu" class="text-xs text-[#C86F45] hover:text-[#E2C99D] transition-colors flex items-center gap-1">
+                <span>View on Menu</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#C86F45]/60 transition-colors">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-[9px] uppercase tracking-widest text-[#C86F45] font-semibold">Daily 14:00 Drop</span>
+                <span class="text-[10px] uppercase text-white/50">Afternoon Bakery Hearth</span>
+              </div>
+              <h3 class="font-serif text-xl text-white font-medium">Earl Grey &amp; Vanilla Basque Cake</h3>
+              <p class="text-xs text-white/70 font-light leading-relaxed">
+                Infused with whole-leaf bergamot black tea and Indonesian Bourbon vanilla beans, caramelized hearth crust with a soft molten center.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+              <span class="text-sm font-semibold text-[#E2C99D]">Rp 48.000</span>
+              <a href="/menu" class="text-xs text-[#C86F45] hover:text-[#E2C99D] transition-colors flex items-center gap-1">
+                <span>View on Menu</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Seasonal Note Banner -->
+        <div class="p-6 rounded-xl bg-white/5 border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <span class="text-[10px] uppercase tracking-widest text-[#E2C99D] font-semibold block">Daily Hearth Freshness</span>
+            <p class="text-xs text-white/80 font-light">
+              Pastries and sourdough loaves emerge from our wood-fired oven daily at 07:30 AM and 14:00 PM. Available until sold out.
+            </p>
+          </div>
+          <a href="/menu" class="text-xs font-medium text-[#C86F45] hover:text-[#E2C99D] transition-colors flex-shrink-0 flex items-center gap-1">
+            <span>Explore bakery &amp; drink menu</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Simple Section: How Visitors Can Learn More About An Event -->
+    <section id="how-to-learn-more" class="py-16 px-6 bg-[#F2EBE0] border-b border-[#E5DEC9]">
+      <div class="max-w-5xl mx-auto space-y-10">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-[10px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Transparent Hospitality</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal">
+            How to Inquire &amp; Join In
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+            We believe neighborhood gatherings should be grounded in genuine human hospitality, not locked behind digital ticketing apps or speculative paywalls.
+          </p>
+        </div>
+
+        <!-- 3 Hospitality Principles -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-[#F7F1E7] p-8 rounded-xl border border-[#E5DEC9] space-y-4">
+            <div class="w-10 h-10 rounded-full bg-[#C86F45]/10 text-[#C86F45] flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">storefront</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329]">1. Walk-Ins Always Welcome</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              You do not need a reservation to visit SENJA. Our indoor tables, conservatory benches, and sunlit courtyard are open daily for coffee, brunch, and conversation.
+            </p>
+          </div>
+
+          <div class="bg-[#F7F1E7] p-8 rounded-xl border border-[#E5DEC9] space-y-4">
+            <div class="w-10 h-10 rounded-full bg-[#C86F45]/10 text-[#C86F45] flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">chat</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329]">2. Inquire at the Brew Bar</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              Curious about upcoming cupping sessions or group tables? Speak directly with our baristas on Jalan Riau 84. They can share roast schedules and seat availability in person.
+            </p>
+          </div>
+
+          <div class="bg-[#F7F1E7] p-8 rounded-xl border border-[#E5DEC9] space-y-4">
+            <div class="w-10 h-10 rounded-full bg-[#C86F45]/10 text-[#C86F45] flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl" aria-hidden="true">verified</span>
+            </div>
+            <h3 class="font-serif text-xl text-[#373329]">3. Creative Concept Notice</h3>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              This What's On calendar is a fictional design portfolio piece. Dates, sample prices, and seasonal tasting menus are presented to showcase modern hospitality UI design.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CTA Section Linking to /visit -->
+    <section class="py-16 px-6 bg-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-[#F2EBE0] border border-[#E5DEC9] rounded-2xl p-8 sm:p-14 text-center space-y-6 relative overflow-hidden">
+          <div class="max-w-2xl mx-auto space-y-3">
+            <span class="text-[10px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Experience SENJA in Person</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal leading-tight">
+              Good Food. Good Company. Every Hour.
+            </h2>
+            <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+              Whether you are dropping in for a quiet morning filter coffee or gathering friends for a slow weekend meal, our courtyard doors are open seven days a week on Jalan Riau.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+            <a href="/visit" class="w-full sm:w-auto px-8 py-3.5 bg-[#C86F45] text-white text-xs font-semibold uppercase tracking-widest rounded hover:bg-[#A8532C] transition-colors shadow-sm text-center">
+              Plan Your Visit
+            </a>
+            <a href="/menu" class="w-full sm:w-auto px-8 py-3.5 border border-[#373329] text-[#373329] text-xs font-semibold uppercase tracking-widest rounded hover:bg-[#E5DEC9] transition-colors text-center">
+              Browse Menu
+            </a>
+          </div>
+
+          <p class="text-[11px] text-[#6B6458] pt-2">
+            Jalan Riau 84, Citarum, Bandung • Open daily from 07:00 AM • Free courtyard Wi-Fi &amp; bike parking
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. Shared Footer Container -->
+  <div id="site-footer-container"></div>
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Render Header & Active State
+      renderHeader('/whats-on');
+
+      // 2. Render Page Hero Header with Title "Good Things Are Happening."
+      renderPageHero(
+        'Good Things Are Happening.',
+        "Gatherings & Seasonal Calendar",
+        'A living calendar of slow Sunday brunches, casual morning cuppings, and twilight seasonal menus in our sunlit Bandung sanctuary.',
+        [{ label: 'Home', href: '/' }, { label: "What's On" }]
+      );
+
+      // 3. Render Footer
+      renderFooter();
+      renderToast();
+      initGlobalInteractions();
+
+      // 4. Interactive Category Filtering on Pre-rendered Event Cards
+      const filterButtons = document.querySelectorAll('.event-filter-btn');
+      const eventCards = document.querySelectorAll('.event-card-item');
+      const emptyState = document.getElementById('filter-empty-state');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+
+          // Update active pill button styling
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-[#373329]', 'text-[#F7F1E7]', 'border-[#373329]', 'shadow-sm');
+            b.classList.add('bg-[#F2EBE0]', 'text-[#373329]', 'border-[#E5DEC9]');
+            b.setAttribute('aria-pressed', 'false');
+          });
+
+          btn.classList.add('bg-[#373329]', 'text-[#F7F1E7]', 'border-[#373329]', 'shadow-sm');
+          btn.classList.remove('bg-[#F2EBE0]', 'text-[#373329]', 'border-[#E5DEC9]');
+          btn.setAttribute('aria-pressed', 'true');
+
+          // Filter cards visibility
+          let visibleCount = 0;
+          eventCards.forEach(card => {
+            const cardCat = card.dataset.category;
+            if (filter === 'all' || cardCat === filter) {
+              card.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Empty state handling
+          if (emptyState) {
+            if (visibleCount === 0) {
+              emptyState.classList.remove('hidden');
+            } else {
+              emptyState.classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* SENJA Café & Kitchen — Global Design System & Foundation Tokens */
+
+:root {
+  /* Brand Color Palette */
+  --brand-cream: #F7F1E7;
+  --brand-warm: #F2EBE0;
+  --brand-charcoal: #373329;
+  --brand-terracotta: #C86F45;
+  --brand-terracotta-dark: #A8532C;
+  --brand-sage: #7C8662;
+  --brand-butter: #E2C99D;
+  --brand-muted: #6B6458;
+  --brand-border: #E5DEC9;
+  --brand-border-subtle: rgba(55, 51, 41, 0.12);
+
+  /* Elevation Shadows */
+  --shadow-ambient: 0 16px 36px -12px rgba(55, 51, 41, 0.08);
+  --shadow-floating: 0 8px 24px -4px rgba(55, 51, 41, 0.08);
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background-color: var(--brand-cream);
+  color: var(--brand-charcoal);
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--brand-cream);
+  color: var(--brand-charcoal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Typography Utility */
+.serif-title {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Accessible Focus States */
+:focus-visible {
+  outline: 2px solid var(--brand-terracotta);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-terracotta);
+}
+
+/* Modal styling */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(55, 51, 41, 0.65);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-content {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Lightbox zoom effect */
+.mosaic-tile {
+  cursor: pointer;
+  position: relative;
+}
+
+.mosaic-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(55, 51, 41, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.mosaic-tile:hover::after {
+  background: rgba(55, 51, 41, 0.12);
+}
+
+/* Subtle Badge Pulse */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.96); }
+}
+
+.pulse-badge {
+  animation: subtle-pulse 3s infinite ease-in-out;
+}
+
+/* Menu rows and hover micro-interaction */
+.menu-item-row {
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.menu-item-row:hover {
+  background-color: rgba(200, 111, 69, 0.04);
+}
+
+/* Toast alert notification */
+#toast-notification {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+  pointer-events: none;
+}
+
+#toast-notification.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

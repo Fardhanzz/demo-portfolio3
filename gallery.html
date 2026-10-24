@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Gallery — A Little Look Around — SENJA Café &amp; Kitchen</title>
+  <meta name="description" content="A photographic archive of SENJA Café &amp; Kitchen in Bandung: sunlit courtyards, specialty coffee extractions, artisan sourdough, and communal tables."/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#F7F1E7",
+              warm: "#F2EBE0",
+              terracotta: "#C86F45",
+              "terracotta-dark": "#A8532C",
+              charcoal: "#373329",
+              sage: "#7C8662",
+              butter: "#E2C99D",
+              muted: "#6B6458",
+              border: "#E5DEC9"
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="antialiased selection:bg-[#C86F45]/20 selection:text-[#C86F45] bg-[#F7F1E7] text-[#373329] min-h-screen flex flex-col justify-between">
+
+  <!-- 1. Shared Header Container -->
+  <div id="site-header-container"></div>
+
+  <!-- 2. Editorial Hero Header Container (Pre-rendered & JS Hydrated) -->
+  <div id="page-hero-container">
+    <div class="w-full bg-[#F2EBE0] border-b border-[#E5DEC9] py-12 md:py-16 px-6">
+      <div class="max-w-5xl mx-auto">
+        <nav class="text-xs uppercase tracking-widest text-[#6B6458] mb-4 flex items-center" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-[#C86F45] transition-colors">Home</a>
+          <span class="text-[#E5DEC9] mx-1.5" aria-hidden="true">/</span>
+          <span class="text-[#373329] font-medium">Gallery</span>
+        </nav>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Visual Journal &amp; Atmosphere</span>
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl text-[#373329] font-normal tracking-tight mt-1">
+          A Little Look Around.
+        </h1>
+        <p class="mt-4 text-[#6B6458] text-sm md:text-base max-w-2xl font-light leading-relaxed">
+          A photographic celebration of sun-drenched Bandung mornings, single-origin Kalita extractions, wood-fired hearth bakes, and the gentle pace of everyday conversations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- 3. Short Supporting Paragraph & Editorial Intro -->
+    <section class="py-12 md:py-16 px-6 border-b border-[#E5DEC9] bg-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-[11px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Atmosphere &amp; Details</span>
+            <h2 class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal leading-snug">
+              Moments shaped by warm morning light, honest materials, and shared tables.
+            </h2>
+            <p class="text-[#6B6458] text-sm md:text-base font-light leading-relaxed">
+              At SENJA, the atmosphere is defined by quiet textures: the way sunlight filters through courtyard palm fronds, the aroma of wild sourdough emerging from our wood-fired oven, and the steady weight of hand-thrown terracotta cups. Here is a glimpse of life in our Bandung sanctuary across the hours.
+            </p>
+          </div>
+          <div class="md:col-span-4 bg-[#F2EBE0] p-6 rounded-xl border border-[#E5DEC9] space-y-3">
+            <div class="flex items-center gap-2 text-[#C86F45]">
+              <span class="material-symbols-outlined text-lg" aria-hidden="true">photo_camera</span>
+              <span class="text-[10px] font-semibold uppercase tracking-widest text-[#373329]">Visual Archive Note</span>
+            </div>
+            <p class="text-xs text-[#6B6458] leading-relaxed font-light">
+              This gallery showcases the imagined culinary, coffee, and spatial aesthetic of SENJA Café &amp; Kitchen created for web design portfolio demonstration in Bandung.
+            </p>
+            <div class="pt-1">
+              <span class="text-[11px] text-[#C86F45] font-medium flex items-center gap-1">
+                <span>Click any image to view details</span>
+                <span aria-hidden="true">↗</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Category Filters & Responsive Editorial Gallery -->
+    <section class="py-16 px-6 bg-[#F2EBE0]">
+      <div class="max-w-6xl mx-auto space-y-10">
+        
+        <!-- Category Filter Controls -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-[#E5DEC9] pb-6">
+          <div>
+            <span class="text-[10px] tracking-[0.25em] uppercase text-[#C86F45] font-semibold block">Curated Archive</span>
+            <h2 class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal mt-1">Explore by Category</h2>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Filter gallery by category">
+            <button 
+              type="button" 
+              data-cat="all" 
+              class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium transition-all bg-[#373329] text-[#F7F1E7] border border-[#373329] shadow-sm cursor-pointer"
+              aria-pressed="true">
+              All (<span id="count-all">8</span>)
+            </button>
+            <button 
+              type="button" 
+              data-cat="food-drinks" 
+              class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium transition-all bg-[#F7F1E7] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              Food &amp; Drinks (<span id="count-food">3</span>)
+            </button>
+            <button 
+              type="button" 
+              data-cat="the-space" 
+              class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium transition-all bg-[#F7F1E7] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              The Space (<span id="count-space">3</span>)
+            </button>
+            <button 
+              type="button" 
+              data-cat="everyday-moments" 
+              class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium transition-all bg-[#F7F1E7] text-[#373329] border border-[#E5DEC9] hover:border-[#C86F45] cursor-pointer"
+              aria-pressed="false">
+              Everyday Moments (<span id="count-moments">2</span>)
+            </button>
+          </div>
+        </div>
+
+        <!-- Editorial Gallery Grid (Pre-rendered for Zero Layout Shift & Immediate SEO) -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Item 1: Pour-Over Craft (Editorial Feature: 2 cols on lg) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-2 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="food-drinks" 
+            data-index="0"
+            role="button"
+            tabindex="0"
+            aria-label="View Single-Origin Kalita Pour-Over in Lightbox">
+            <div class="relative aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/gallery-pourover.jpg" 
+                alt="Barista pouring hot water over a ceramic Kalita Wave dripper on the reclaimed timber brew counter with morning steam" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Coffee Craft
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">Food &amp; Drinks</span>
+                <span>Brew Bar • Morning Extraction</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Single-Origin Kalita Pour-Over
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Single-origin West Java Arabica hand-extracted over ceramic Kalita Wave at our timber brew bar.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 2: Courtyard Sanctuary (1 col) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-1 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="the-space" 
+            data-index="1"
+            role="button"
+            tabindex="0"
+            aria-label="View Gravel Courtyard Sanctuary in Lightbox">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/gallery-courtyard.jpg" 
+                alt="Sunlit café courtyard garden with gravel path, lush monstera plants in terracotta pots, and weathered teak wood benches" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Architecture
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">The Space</span>
+                <span>Courtyard Garden</span>
+              </div>
+              <h3 class="font-serif text-xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Gravel Courtyard Sanctuary
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Open-air gravel courtyard shaded by mature tropical foliage and warm limewash walls.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 3: Avocado Tartine (1 col) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-1 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="food-drinks" 
+            data-index="2"
+            role="button"
+            tabindex="0"
+            aria-label="View Wild Sourdough Avocado Tartine in Lightbox">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/brunch.jpg" 
+                alt="Artisan sourdough avocado tartine with soft-poached pasture egg, garden microgreens, and Egyptian dukkah spice" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Brunch Plate
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">Food &amp; Drinks</span>
+                <span>All-Day Kitchen</span>
+              </div>
+              <h3 class="font-serif text-xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Wild Sourdough Avocado Tartine
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                36-hour fermented hearth sourdough, crushed Lembang avocado, and pasture-raised poached egg.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 4: Communal Table Moments (Editorial Spread: 2 cols on lg) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-2 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="everyday-moments" 
+            data-index="3"
+            role="button"
+            tabindex="0"
+            aria-label="View Shared Morning Conversations in Lightbox">
+            <div class="relative aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/gallery-communal.jpg" 
+                alt="Group of friends seated around a rustic teak communal table sharing coffee and brunch in natural light" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Social Atmosphere
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">Everyday Moments</span>
+                <span>Main Dining Hall</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Shared Morning Conversations
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Unhurried mornings and shared conversation around our long communal teak table.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 5: Fresh Hearth Pastries (1 col) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-1 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="food-drinks" 
+            data-index="4"
+            role="button"
+            tabindex="0"
+            aria-label="View Hearth Bakes & Basque Molten Slice in Lightbox">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/gallery-pastry.jpg" 
+                alt="Flaky almond croissant, burnt Basque cheesecake slice, and thick toasted brioche with cultured butter on rustic stoneware" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Oven Hearth
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">Food &amp; Drinks</span>
+                <span>Bakery Hearth Drops</span>
+              </div>
+              <h3 class="font-serif text-xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Hearth Bakes &amp; Basque Molten Slice
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Fresh morning drops from our wood-fired oven: almond pastry, brioche, and vanilla Basque cake.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 6: Limewash Arch (1 col) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-1 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="the-space" 
+            data-index="5"
+            role="button"
+            tabindex="0"
+            aria-label="View Limewash Conservatory Arch in Lightbox">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/gallery-arch.jpg" 
+                alt="Curved limewash archway overlooking a bright sunlit conservatory with mid-century armchair and terracotta floor tiles" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Interior Detail
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">The Space</span>
+                <span>Conservatory Reading Nook</span>
+              </div>
+              <h3 class="font-serif text-xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Limewash Conservatory Arch
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Curved limewash architectural archway opening onto the conservatory garden nook.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 7: Terracotta Interior (1 col) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-1 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="the-space" 
+            data-index="6"
+            role="button"
+            tabindex="0"
+            aria-label="View Terracotta Clay & Mid-Century Light in Lightbox">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/interior.jpg" 
+                alt="Contemporary tropical café interior with warm terracotta floor tiles, cream limewash walls, and potted monstera plants" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Dining Room
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">The Space</span>
+                <span>Architectural Detail</span>
+              </div>
+              <h3 class="font-serif text-xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Terracotta Clay &amp; Mid-Century Light
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                Warm terracotta clay tiles and natural timber seating in the main dining room.
+              </p>
+            </div>
+          </article>
+
+          <!-- Item 8: Courtyard Table Setting (Editorial Spread: 2 cols on lg) -->
+          <article 
+            class="gallery-item-card group cursor-pointer lg:col-span-2 bg-[#F7F1E7] rounded-2xl border border-[#E5DEC9] overflow-hidden hover:border-[#C86F45]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between" 
+            data-category="everyday-moments" 
+            data-index="7"
+            role="button"
+            tabindex="0"
+            aria-label="View Courtyard Sunbeams & Quiet Moments in Lightbox">
+            <div class="relative aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-[#373329]">
+              <img 
+                src="./images/coffee-table.jpg" 
+                alt="Terracotta ceramic coffee cup and flaky pastry bathed in warm morning courtyard sunlight on a rustic wooden table" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute top-4 left-4">
+                <span class="text-[9px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#373329]/90 text-[#F7F1E7] rounded backdrop-blur-sm">
+                  Quiet Ritual
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 hidden group-hover:flex items-center gap-1.5 px-3 py-1 bg-[#C86F45] text-white text-[10px] font-semibold uppercase tracking-wider rounded shadow">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">zoom_in</span>
+                <span>Enlarge</span>
+              </div>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <div class="flex items-center justify-between text-[11px] text-[#6B6458] mb-1">
+                <span class="uppercase tracking-wider font-semibold text-[#C86F45]">Everyday Moments</span>
+                <span>Courtyard Morning Table</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl text-[#373329] group-hover:text-[#C86F45] transition-colors">
+                Courtyard Sunbeams &amp; Quiet Moments
+              </h3>
+              <p class="text-xs text-[#6B6458] mt-2 font-light leading-relaxed">
+                A quiet corner table, a fresh flat white, and Bandung's cooling morning breeze.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Filter Empty State (Hidden by default) -->
+        <div id="filter-empty-state" class="hidden text-center py-16 bg-[#F7F1E7] rounded-xl border border-dashed border-[#E5DEC9]">
+          <p class="font-serif text-xl text-[#373329]">No photographs match this category</p>
+          <p class="text-xs text-[#6B6458] mt-1">Please select "All" to browse the full visual journal.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Visual Storytelling Section: Everyday Atmosphere Quote -->
+    <section class="py-16 px-6 bg-[#F7F1E7] border-b border-[#E5DEC9]">
+      <div class="max-w-4xl mx-auto text-center space-y-6">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">The Visual Philosophy</span>
+        <blockquote class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal leading-relaxed italic">
+          "A café is not just a place to drink coffee; it is a frame through which the morning enters, softens, and stays."
+        </blockquote>
+        <p class="text-xs sm:text-sm text-[#6B6458] max-w-lg mx-auto font-light leading-relaxed">
+          From the clay of our cups to the timber of our communal tables, everything at SENJA is chosen to invite pause.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Final Visual Feature & Image-Led CTA Linking to /visit -->
+    <section class="py-16 px-6 bg-[#373329] text-[#F7F1E7]">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/5 border border-white/10 rounded-2xl overflow-hidden p-6 sm:p-10">
+          
+          <!-- Image Feature -->
+          <div class="lg:col-span-5 relative aspect-[4/3] rounded-xl overflow-hidden bg-black/40 shadow-inner">
+            <img 
+              src="./images/gallery-courtyard.jpg" 
+              alt="Sunlit courtyard with weathered teak bench and potted tropical plants at SENJA" 
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <span class="text-[10px] uppercase tracking-widest font-semibold px-2.5 py-1 bg-[#C86F45] rounded">
+                Jalan Riau 84 • Bandung
+              </span>
+            </div>
+          </div>
+
+          <!-- Narrative Invitation -->
+          <div class="lg:col-span-7 space-y-5 lg:pl-4">
+            <span class="text-[10px] tracking-[0.25em] uppercase text-[#E2C99D] font-semibold block">Experience It in Person</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#F7F1E7] font-normal leading-tight">
+              The Light is Always Best in Person.
+            </h2>
+            <p class="text-xs sm:text-sm text-white/75 font-light leading-relaxed">
+              Photographs only tell part of the story. Join us on Jalan Riau for your first morning pour-over, a slow lunch under courtyard palms, or an unhurried slice of Basque cake as dusk falls.
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="/visit" class="px-7 py-3.5 bg-[#C86F45] text-white text-xs font-semibold uppercase tracking-widest rounded hover:bg-[#A8532C] transition-colors shadow-sm text-center">
+                Plan Your Visit to Jalan Riau
+              </a>
+              <a href="/menu" class="px-7 py-3.5 border border-white/30 text-[#F7F1E7] text-xs font-semibold uppercase tracking-widest rounded hover:bg-white/10 transition-colors text-center">
+                Browse Menu
+              </a>
+            </div>
+            <p class="text-[11px] text-white/50 pt-1">
+              Open Daily 07:00 AM – 21:00 PM • Courtyard seating, indoor sanctuary &amp; bike parking
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Accessible Lightbox Modal with Keyboard Navigation -->
+  <div 
+    id="accessible-lightbox" 
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-black/90 backdrop-blur-md transition-opacity duration-300" 
+    role="dialog" 
+    aria-modal="true" 
+    aria-label="Enlarged Photograph"
+    tabindex="-1">
+    
+    <div class="relative max-w-5xl w-full flex flex-col items-center select-none" id="lightbox-dialog-content">
+      
+      <!-- Top Action Bar -->
+      <div class="w-full flex items-center justify-between text-white/80 pb-3 border-b border-white/15 mb-4">
+        <div class="flex items-center gap-3">
+          <span id="lightbox-tag" class="text-[10px] uppercase tracking-widest font-semibold px-2 py-0.5 bg-[#C86F45] text-white rounded">
+            Photo
+          </span>
+          <span id="lightbox-counter" class="text-xs text-white/60 font-mono tracking-wider">
+            1 of 8
+          </span>
+        </div>
+        
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] text-white/40 hidden sm:inline">Use [←] [→] keys to navigate • [Esc] to close</span>
+          <button 
+            id="lightbox-close-btn" 
+            type="button" 
+            class="text-white/80 hover:text-white p-1.5 rounded-full hover:bg-white/10 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C86F45]" 
+            aria-label="Close Lightbox (Esc)">
+            <span class="material-symbols-outlined text-2xl" aria-hidden="true">close</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Image Display Area with Prev/Next Controls -->
+      <div class="relative w-full flex items-center justify-center">
+        
+        <!-- Prev Button -->
+        <button 
+          id="lightbox-prev-btn" 
+          type="button" 
+          class="absolute left-2 sm:left-4 z-10 w-11 h-11 rounded-full bg-black/60 hover:bg-[#C86F45] text-white flex items-center justify-center transition-all cursor-pointer border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#C86F45]" 
+          aria-label="Previous photograph (Left Arrow)">
+          <span class="material-symbols-outlined text-2xl" aria-hidden="true">arrow_back</span>
+        </button>
+
+        <!-- Image Container with Fixed Constraints -->
+        <div class="rounded-xl overflow-hidden border border-white/20 shadow-2xl max-h-[72vh] flex items-center justify-center bg-black/50">
+          <img 
+            id="lightbox-img" 
+            src="" 
+            alt="" 
+            class="w-auto h-auto max-h-[70vh] max-w-full object-contain transition-opacity duration-200"
+          />
+        </div>
+
+        <!-- Next Button -->
+        <button 
+          id="lightbox-next-btn" 
+          type="button" 
+          class="absolute right-2 sm:right-4 z-10 w-11 h-11 rounded-full bg-black/60 hover:bg-[#C86F45] text-white flex items-center justify-center transition-all cursor-pointer border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#C86F45]" 
+          aria-label="Next photograph (Right Arrow)">
+          <span class="material-symbols-outlined text-2xl" aria-hidden="true">arrow_forward</span>
+        </button>
+
+      </div>
+
+      <!-- Bottom Caption Bar -->
+      <div class="w-full text-center mt-4 space-y-1">
+        <h4 id="lightbox-title" class="font-serif text-xl sm:text-2xl text-white font-medium"></h4>
+        <p id="lightbox-caption" class="text-white/75 text-xs sm:text-sm font-light max-w-2xl mx-auto"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 7. Shared Footer Container -->
+  <div id="site-footer-container"></div>
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Render Header & Active State
+      renderHeader('/gallery');
+
+      // 2. Render Page Hero Header with Title "A Little Look Around."
+      renderPageHero(
+        'A Little Look Around.',
+        'Visual Journal & Atmosphere',
+        'A photographic celebration of sun-drenched Bandung mornings, single-origin Kalita extractions, wood-fired hearth bakes, and the gentle pace of everyday conversations.',
+        [{ label: 'Home', href: '/' }, { label: 'Gallery' }]
+      );
+
+      // 3. Render Footer
+      renderFooter();
+      renderToast();
+      initGlobalInteractions();
+
+      // 4. Interactive Category Filtering
+      const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+      const galleryCards = document.querySelectorAll('.gallery-item-card');
+      const emptyState = document.getElementById('filter-empty-state');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.dataset.cat;
+
+          // Update active button styling
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-[#373329]', 'text-[#F7F1E7]', 'border-[#373329]', 'shadow-sm');
+            b.classList.add('bg-[#F7F1E7]', 'text-[#373329]', 'border-[#E5DEC9]');
+            b.setAttribute('aria-pressed', 'false');
+          });
+
+          btn.classList.add('bg-[#373329]', 'text-[#F7F1E7]', 'border-[#373329]', 'shadow-sm');
+          btn.classList.remove('bg-[#F7F1E7]', 'text-[#373329]', 'border-[#E5DEC9]');
+          btn.setAttribute('aria-pressed', 'true');
+
+          // Filter card visibility
+          let visibleCount = 0;
+          galleryCards.forEach(card => {
+            const cardCat = card.dataset.category;
+            if (cat === 'all' || cardCat === cat) {
+              card.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Empty state handling
+          if (emptyState) {
+            if (visibleCount === 0) {
+              emptyState.classList.remove('hidden');
+            } else {
+              emptyState.classList.add('hidden');
+            }
+          }
+        });
+      });
+
+      // 5. Accessible Lightbox Implementation
+      const lightbox = document.getElementById('accessible-lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+      const lightboxTag = document.getElementById('lightbox-tag');
+      const lightboxCounter = document.getElementById('lightbox-counter');
+      const closeBtn = document.getElementById('lightbox-close-btn');
+      const prevBtn = document.getElementById('lightbox-prev-btn');
+      const nextBtn = document.getElementById('lightbox-next-btn');
+
+      let currentActiveIndex = 0;
+      let lastFocusedElement = null;
+
+      // Extract items from SITE_DATA.gallery
+      const items = (typeof SITE_DATA !== 'undefined' && SITE_DATA.gallery) ? SITE_DATA.gallery : [];
+
+      function openLightbox(index) {
+        if (!items || items.length === 0 || !lightbox) return;
+        currentActiveIndex = index;
+        lastFocusedElement = document.activeElement;
+
+        updateLightboxContent();
+
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+
+        // Focus close button for accessibility
+        if (closeBtn) closeBtn.focus();
+      }
+
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        document.body.style.overflow = '';
+
+        // Restore focus
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      }
+
+      function updateLightboxContent() {
+        const item = items[currentActiveIndex];
+        if (!item) return;
+
+        if (lightboxImg) {
+          lightboxImg.src = item.src;
+          lightboxImg.alt = item.alt || item.title;
+        }
+        if (lightboxTitle) lightboxTitle.textContent = item.title;
+        if (lightboxCaption) lightboxCaption.textContent = item.caption;
+        if (lightboxTag) lightboxTag.textContent = item.tag || item.categoryLabel || 'SENJA';
+        if (lightboxCounter) {
+          lightboxCounter.textContent = `${currentActiveIndex + 1} of ${items.length}`;
+        }
+      }
+
+      function nextImage() {
+        currentActiveIndex = (currentActiveIndex + 1) % items.length;
+        updateLightboxContent();
+      }
+
+      function prevImage() {
+        currentActiveIndex = (currentActiveIndex - 1 + items.length) % items.length;
+        updateLightboxContent();
+      }
+
+      // Attach Card Clicks and Keyboard Triggers
+      galleryCards.forEach(card => {
+        const index = parseInt(card.dataset.index, 10);
+        card.addEventListener('click', () => openLightbox(index));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openLightbox(index);
+          }
+        });
+      });
+
+      // Lightbox Controls
+      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+      if (nextBtn) nextBtn.addEventListener('click', nextImage);
+      if (prevBtn) prevBtn.addEventListener('click', prevImage);
+
+      // Click outside dialog to close
+      if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) {
+            closeLightbox();
+          }
+        });
+      }
+
+      // Keyboard Navigation (Escape, Left Arrow, Right Arrow, Tab Trap)
+      document.addEventListener('keydown', (e) => {
+        if (lightbox && !lightbox.classList.contains('hidden')) {
+          if (e.key === 'Escape') {
+            e.preventDefault();
+            closeLightbox();
+          } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            nextImage();
+          } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            prevImage();
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Story — A Place to Slow Down — SENJA Café &amp; Kitchen</title>
+  <meta name="description" content="SENJA was created as an all-day neighborhood sanctuary in Bandung. An unhurried celebration of coffee, wood-fired sourdough, and shared tables."/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#F7F1E7",
+              warm: "#F2EBE0",
+              terracotta: "#C86F45",
+              "terracotta-dark": "#A8532C",
+              charcoal: "#373329",
+              sage: "#7C8662",
+              butter: "#E2C99D",
+              muted: "#6B6458",
+              border: "#E5DEC9"
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="antialiased selection:bg-[#C86F45]/20 selection:text-[#C86F45]">
+
+  <!-- 1. Shared Site Header & Navigation Container -->
+  <div id="site-header-container"></div>
+
+  <!-- 2. Editorial Hero Header with Requested Heading -->
+  <div id="page-hero-container"></div>
+
+  <main class="py-16 px-6">
+    <div class="max-w-5xl mx-auto space-y-20 md:space-y-28">
+
+      <!-- 3. BRAND INTRODUCTION: THE ALL-DAY CAFÉ CONCEPT (Varied Text Widths) -->
+      <section class="space-y-10" aria-labelledby="concept-heading">
+        <div class="max-w-3xl">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">The Concept</span>
+          <h2 id="concept-heading" class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#373329] font-normal leading-tight mt-2">
+            A Living Room for the Neighborhood, from Morning to Twilight
+          </h2>
+        </div>
+
+        <!-- Editorial Asymmetric Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+          <div class="lg:col-span-5 border-l-2 border-[#C86F45] pl-6 py-2">
+            <p class="font-serif text-xl sm:text-2xl text-[#373329] font-normal leading-snug italic">
+              "We imagined a café that moves with the sun rather than against the clock—where morning focus softly eases into late afternoon warmth."
+            </p>
+          </div>
+          <div class="lg:col-span-7 space-y-4 text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+            <p>
+              SENJA was conceived around a simple observation: modern life often leaves little space between leaving home and arriving at work. We wanted to build an all-day sanctuary that bridges that gap—a calm Third Place where the chairs are comfortable, the sunlight is generous, and nobody is ever rushed out the door.
+            </p>
+            <p>
+              Whether you arrive at seven in the morning for a quiet pour-over alongside your notebook, gather with colleagues over warm sourdough toasties at midday, or share a slice of Basque cake as Bandung's dusk cools the garden air, the room is shaped to make you feel immediately at home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. STORYTELLING: COFFEE, FOOD, & EVERYDAY RITUALS -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center" aria-labelledby="rituals-heading">
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Everyday Rituals</span>
+          <h2 id="rituals-heading" class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#373329] font-normal leading-tight">
+            The Craft of Small, Daily Pleasures
+          </h2>
+          <div class="space-y-4 text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+            <p>
+              We view food and beverage as quiet daily ceremonies rather than fast transactions. Coffee begins with Indonesian single-origin beans selected for nuance, ground fresh to order, and extracted through ceramic filters that let delicate floral and honey notes breathe.
+            </p>
+            <p>
+              In our bakery, wild yeast dough rests in cool fermentation for 36 hours before meeting the wood-fired hearth. The blistered crust, fragrant open crumb, and subtle sourdough tang require no shortcuts—only time, flour, spring water, and attentive hands.
+            </p>
+            <p>
+              When a plate arrives at your table, it reflects what is fresh and honest: seasonal produce from nearby highlands, hand-simmered pandan custard, and eggs cooked with gentle precision.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative overflow-hidden rounded-xl border border-[#E5DEC9] shadow-sm bg-[#F2EBE0]">
+            <img alt="Specialty latte in terracotta cup with flaky morning pastry on sunlit wooden table" 
+                 class="w-full h-80 sm:h-96 object-cover filter contrast-[1.02]" 
+                 src="./images/coffee-table.jpg"/>
+            <div class="absolute bottom-4 left-4 bg-[#F7F1E7]/95 backdrop-blur-sm px-3.5 py-1.5 text-[11px] uppercase tracking-wider font-semibold text-[#373329] rounded shadow-sm">
+              Morning Ceramic &amp; Bake
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. VISUAL SECTION: HOSPITALITY, SHARED TABLES, & ATMOSPHERE -->
+      <section class="bg-[#F2EBE0] rounded-xl border border-[#E5DEC9] overflow-hidden shadow-sm" aria-labelledby="atmosphere-heading">
+        <div class="p-8 sm:p-12 max-w-3xl space-y-4">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">The Space &amp; Atmosphere</span>
+          <h2 id="atmosphere-heading" class="font-serif text-2xl sm:text-3xl md:text-4xl text-[#373329] font-normal leading-tight">
+            Room for Stillness, Space for Gathering
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+            Architecture and hospitality are inseparable. Our space on Jalan Riau was designed with four distinct zones, ensuring that whether you seek solitude with a book or an animated table for eight, you find a corner that feels personal.
+          </p>
+        </div>
+
+        <!-- Full-width atmospheric image banner -->
+        <div class="w-full h-72 sm:h-96 relative overflow-hidden bg-[#373329]">
+          <img alt="The sunlit conservatory dining room at SENJA with limewash arches and potted tropical palms" 
+               class="w-full h-full object-cover filter brightness-95" 
+               src="./images/interior.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white text-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+            <span class="font-serif text-base font-normal">Limewash Arches &amp; Tropical Foliage</span>
+            <span class="text-[11px] uppercase tracking-widest text-white/80">Bandung Wetan Sanctuary</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. BRAND VALUES PRESENTED THROUGH CONCISE EDITORIAL STATEMENTS (NO GENERIC ICON CARDS) -->
+      <section class="space-y-10" aria-labelledby="values-heading">
+        <div class="max-w-2xl border-b border-[#E5DEC9] pb-4">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">What Guides Us</span>
+          <h2 id="values-heading" class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal mt-1">
+            Our Core Editorial Values
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6B6458] mt-1 font-light">
+            Four guiding principles that shape our food, space, and hospitality daily.
+          </p>
+        </div>
+
+        <!-- 4 Typographic Editorial Statements (Pure typography, no generic icons) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+          <!-- Value I -->
+          <div class="space-y-2 border-t border-[#E5DEC9] pt-5">
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#C86F45]">01 / PACE</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-[#373329]">Patience Over Haste</h3>
+            <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+              We leaven our sourdough over 36 hours and extract coffee with measured calibration. We believe good meals cannot be hurried, and that the modern world needs more places that respect the clock of craftsmanship.
+            </p>
+          </div>
+
+          <!-- Value II -->
+          <div class="space-y-2 border-t border-[#E5DEC9] pt-5">
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#C86F45]">02 / HONESTY</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-[#373329]">Honesty on the Plate</h3>
+            <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+              Simple ingredients speak clearest when treated with care. We avoid culinary pretension in favor of vibrant flavors, seasonal West Java harvests, balanced seasoning, and honest food that leaves you nourished.
+            </p>
+          </div>
+
+          <!-- Value III -->
+          <div class="space-y-2 border-t border-[#E5DEC9] pt-5">
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#C86F45]">03 / WELCOME</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-[#373329]">Open-Door Hospitality</h3>
+            <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+              True hospitality is unforced and gracious. Whether arriving alone for a solitary hour or gathering for an animated reunion, our tables are set to receive you with the natural warmth of Sundanese community.
+            </p>
+          </div>
+
+          <!-- Value IV -->
+          <div class="space-y-2 border-t border-[#E5DEC9] pt-5">
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#C86F45]">04 / MATERIALS</span>
+            <h3 class="font-serif text-xl sm:text-2xl text-[#373329]">Materials That Age Well</h3>
+            <p class="text-xs sm:text-sm text-[#6B6458] leading-relaxed font-light">
+              Terracotta clay, limewash plaster, unbleached heavy linen, and oiled teak wood. We deliberately chose tactile, earthy materials that wear in gracefully with daily life rather than wearing out.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. PHOTO-LED SECTION: IMAGINED DETAILS OF THE SPACE & FOOD -->
+      <section class="space-y-8" aria-labelledby="details-heading">
+        <div class="border-b border-[#E5DEC9] pb-4">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Visual Atmosphere</span>
+          <h2 id="details-heading" class="font-serif text-2xl sm:text-3xl text-[#373329] font-normal mt-1">
+            Details of the Daily Space
+          </h2>
+        </div>
+
+        <!-- Asymmetric photo-led spread -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+          <div class="md:col-span-7 rounded-xl overflow-hidden border border-[#E5DEC9] bg-[#F2EBE0] shadow-sm flex flex-col justify-between">
+            <div class="h-72 sm:h-80 overflow-hidden">
+              <img alt="Poached egg and avocado sourdough brunch plate with microgreens" 
+                   class="w-full h-full object-cover filter contrast-[1.02] hover:scale-105 transition-transform duration-700 ease-out" 
+                   src="./images/brunch.jpg"/>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <h3 class="font-serif text-lg text-[#373329]">Stoneground Hearth Tartine</h3>
+              <p class="text-xs text-[#6B6458] mt-1 font-light leading-relaxed">
+                Hand-shaped loaf sliced thick, stoneground wild starter, soft pasture egg, and aromatic herbs.
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 rounded-xl overflow-hidden border border-[#E5DEC9] bg-[#F2EBE0] shadow-sm flex flex-col justify-between">
+            <div class="h-72 sm:h-80 overflow-hidden">
+              <img alt="Specialty pour-over coffee extraction in ceramic cup" 
+                   class="w-full h-full object-cover object-[35%_70%] filter contrast-[1.02] hover:scale-105 transition-transform duration-700 ease-out" 
+                   src="./images/coffee-table.jpg"/>
+            </div>
+            <div class="p-6 bg-[#F7F1E7]">
+              <h3 class="font-serif text-lg text-[#373329]">Kalita Wave Extraction</h3>
+              <p class="text-xs text-[#6B6458] mt-1 font-light leading-relaxed">
+                Single-origin filter coffee poured slowly to reveal honey and citrus mountain notes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. CTA LINKING TO /menu AND /visit + PORTFOLIO CONCEPT NOTE -->
+      <section class="bg-[#F2EBE0] rounded-xl border border-[#E5DEC9] p-8 sm:p-14 text-center space-y-6 shadow-sm">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-[#C86F45] font-semibold">Join Our Table</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#373329] font-normal max-w-xl mx-auto">
+          We Would Love to Welcome You
+        </h2>
+        <p class="text-xs sm:text-sm text-[#6B6458] max-w-lg mx-auto font-light leading-relaxed">
+          Explore our seasonal menu or drop by Jalan Riau No. 84 in Bandung. The doors open at seven every morning.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
+          <a href="/menu" class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#C86F45] text-white text-xs font-semibold tracking-widest uppercase rounded hover:bg-[#A8532C] transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C86F45]">
+            <span>Explore The Menu</span>
+            <span class="text-sm" aria-hidden="true">→</span>
+          </a>
+          <a href="/visit" class="inline-flex items-center gap-2 px-8 py-3.5 border border-[#373329] text-[#373329] text-xs font-semibold tracking-widest uppercase rounded hover:bg-[#F7F1E7] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#373329]">
+            <span>Plan Your Visit</span>
+          </a>
+        </div>
+
+        <!-- Transparent Portfolio Concept Note -->
+        <div class="pt-8 border-t border-[#E5DEC9] max-w-xl mx-auto text-[11px] text-[#6B6458]/70 leading-relaxed font-light">
+          <strong class="text-[#373329] font-medium block mb-0.5">Portfolio Project Concept</strong>
+          SENJA Café &amp; Kitchen is a conceptual culinary brand and website created to demonstrate modern editorial web development and hospitality brand design.
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 9. Shared Site Footer Container -->
+  <div id="site-footer-container"></div>
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Shared Header
+      renderHeader('/our-story');
+      renderFooter();
+      renderToast();
+      initGlobalInteractions();
+
+      // 2. Editorial Hero Header with Requested Heading: "A Place to Slow Down."
+      renderPageHero(
+        'A Place to Slow Down.',
+        'Our Story & Philosophy',
+        'An all-day sanctuary shaped around morning light, honest food, and the comfort of an unhurried table on Jalan Riau, Bandung.',
+        [{ label: 'Home', href: '/' }, { label: 'Our Story' }]
+      );
+    });
+  </script>
+</body>
+</html>
