@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:8080/",
- "at": "2026-10-24T03:08:54.377Z",
+ "at": "2026-10-24T03:20:40.970Z",
  "allow": [],
  "viewports": [
   {
@@ -18,8 +18,8 @@
    ],
    "motion": {
     "elements": 29,
-    "css": 7,
-    "transitions": 21,
+    "css": 6,
+    "transitions": 22,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -78,7 +78,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.8,
-     "top": 528,
+     "top": 470,
      "tag": "h1",
      "kind": "heading"
     },
@@ -128,7 +128,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.8,
-      "top": 528,
+      "top": 470,
       "tag": "h1",
       "kind": "heading"
      },
@@ -148,8 +148,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.47,
-      "top": 794,
+      "widthRatio": 0.4,
+      "top": 722,
       "tag": "p",
       "kind": "statement"
      },
@@ -337,7 +337,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [],
@@ -484,7 +484,7 @@
       "height": 846,
       "words": 47,
       "media": 2,
-      "middle": 93,
+      "middle": 121,
       "heading": {
        "text": "SENJA",
        "size": 220,
@@ -649,7 +649,7 @@
      {
       "text": "SENJA",
       "size": 220,
-      "top": 528,
+      "top": 470,
       "firstScreen": true
      }
     ],
@@ -711,8 +711,8 @@
    ],
    "motion": {
     "elements": 29,
-    "css": 7,
-    "transitions": 21,
+    "css": 6,
+    "transitions": 22,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -771,7 +771,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.94,
-     "top": 612,
+     "top": 548,
      "tag": "h1",
      "kind": "heading"
     },
@@ -821,7 +821,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 612,
+      "top": 548,
       "tag": "h1",
       "kind": "heading"
      },
@@ -842,7 +842,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 775,
+      "top": 711,
       "tag": "p",
       "kind": "statement"
      },
@@ -1030,7 +1030,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1144,7 +1144,11 @@
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.9
+      "ratio": 0.52
+     },
+     {
+      "type": "img",
+      "ratio": 0.38
      }
     ],
     "nav": {
@@ -1175,8 +1179,8 @@
       "tag": "section",
       "top": 108,
       "height": 881,
-      "words": 47,
-      "media": 3,
+      "words": 46,
+      "media": 2,
       "middle": 0,
       "heading": {
        "text": "SENJA",
@@ -1184,9 +1188,9 @@
        "tag": "h1"
       },
       "left": 24,
-      "right": 32,
+      "right": 122,
       "textLeft": 24,
-      "textRight": 32,
+      "textRight": 122,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1337,7 +1341,7 @@
      {
       "text": "SENJA",
       "size": 131,
-      "top": 612,
+      "top": 548,
       "firstScreen": true
      }
     ],
@@ -1392,8 +1396,8 @@
     1
    ],
    "motion": {
-    "elements": 30,
-    "css": 7,
+    "elements": 29,
+    "css": 6,
     "transitions": 22,
     "scripted": 1,
     "videos": 0,
@@ -1837,7 +1841,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1984,14 +1988,14 @@
       "height": 726,
       "words": 46,
       "media": 2,
-      "middle": 0,
+      "middle": 7,
       "heading": {
        "text": "SENJA",
        "size": 68,
        "tag": "h1"
       },
       "left": 24,
-      "right": 32,
+      "right": 0,
       "textLeft": 24,
       "textRight": 32,
       "fullBleed": true,

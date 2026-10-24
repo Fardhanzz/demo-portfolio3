@@ -225,23 +225,23 @@
       </div>
 
       <!-- Top Row Details -->
-      <div class="relative z-20 px-6 lg:px-12 py-8">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" data-rise style="--delay: 1;">
+      <div class="relative z-20 px-6 lg:px-12 pt-6 sm:pt-8 pb-3">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4" data-rise style="--delay: 1;">
           <div class="max-w-md">
-            <p class="text-base sm:text-lg font-light text-white/95 leading-snug">
+            <p class="text-sm sm:text-base font-light text-white/90 leading-snug">
               Good food. Good company. Every hour on Jalan Riau, Bandung.
             </p>
           </div>
-          <div class="flex items-center gap-3 text-sm text-white/90">
-            <span id="hero-slide-caption" class="transition-opacity duration-300">Courtyard Garden Sanctuary</span>
-            <span>•</span>
-            <span>Daily 07:00 – 22:00</span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-sm text-white/90">
+            <span id="hero-slide-caption" class="transition-opacity duration-300 font-medium text-white">Courtyard Garden Sanctuary</span>
+            <span class="text-white/40">•</span>
+            <span class="text-white/80 whitespace-nowrap">Daily 07:00 – 22:00</span>
           </div>
         </div>
       </div>
 
       <!-- Bottom Monumental Wordmark & Action -->
-      <div class="relative z-30 px-6 lg:px-12 pb-10">
+      <div class="relative z-30 px-6 lg:px-12 pb-24 lg:pb-28">
         <div class="max-w-6xl mx-auto space-y-6">
           
           <!-- Monument Name is the H1 of the page at the top of the block -->
@@ -251,47 +251,46 @@
             </h1>
           </div>
 
-          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2 relative z-30">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-2 relative z-30">
             <div class="max-w-2xl space-y-2">
               <p class="text-2xl sm:text-3xl font-serif text-white/95 font-normal leading-tight" data-rise style="--delay: 3;">
                 Bandung's Sanctuary of Golden Light.
               </p>
-              <p class="text-base sm:text-lg text-white/85 font-light leading-relaxed" data-rise style="--delay: 4;">
+              <p class="text-base sm:text-lg text-white/85 font-light leading-relaxed max-w-xl" data-rise style="--delay: 4;">
                 Single-origin Priangan coffees, 36-hour wild hearth sourdough, and shared courtyard tables where no one is rushed.
               </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row sm:items-center gap-6">
-              <div class="flex flex-wrap items-center gap-4">
-                <a href="/menu" class="px-7 py-3.5 bg-[#A34821] text-white text-sm font-medium rounded hover:bg-[#7E3314] transition-colors" data-rise style="--delay: 5;">
-                  Explore Menu
-                </a>
-                <a href="/visit" class="px-7 py-3.5 bg-white/15 text-white text-sm font-medium rounded hover:bg-white/25 transition-colors border border-white/20" data-rise style="--delay: 6;">
-                  Visit Sanctuary
-                </a>
-              </div>
-
-              <!-- Editorial Slider Controls & Progress Indicators -->
-              <div class="flex items-center gap-3 pt-1 sm:pt-0" data-rise style="--delay: 6;">
-                <button id="hero-prev" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-[#A34821]" aria-label="Previous photograph">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-                </button>
-
-                <!-- Indicator Bars -->
-                <div class="flex items-center gap-2 px-3 py-2.5 bg-black/60 rounded-full">
-                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white transition-all duration-300" data-index="0" aria-label="Go to Courtyard slide"></button>
-                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="1" aria-label="Go to Interior slide"></button>
-                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="2" aria-label="Go to Brew Bar slide"></button>
-                </div>
-
-                <button id="hero-next" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-[#A34821]" aria-label="Next photograph">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
-              </div>
+            <!-- Two Action Buttons (Explore Menu & Visit Sanctuary) in a balanced horizontal row -->
+            <div class="grid grid-cols-2 sm:flex sm:items-center gap-3 sm:gap-4 flex-shrink-0" data-rise style="--delay: 5;">
+              <a href="/menu" class="px-4 sm:px-8 py-3.5 bg-[#A34821] text-white text-sm font-medium rounded hover:bg-[#7E3314] transition-all hover:scale-[1.02] active:scale-[0.98] text-center whitespace-nowrap sm:min-w-[150px]">
+                Explore Menu
+              </a>
+              <a href="/visit" class="px-4 sm:px-8 py-3.5 bg-white/15 text-white text-sm font-medium rounded hover:bg-white/25 transition-all active:scale-[0.98] border border-white/25 hover:border-white/40 text-center whitespace-nowrap sm:min-w-[150px]">
+                Visit Sanctuary
+              </a>
             </div>
           </div>
 
         </div>
+      </div>
+
+      <!-- Centered Slider Controls Dock (Tengah Bawah) -->
+      <div class="absolute bottom-5 sm:bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2.5 sm:gap-3 pointer-events-auto" data-rise style="--delay: 6;">
+        <button id="hero-prev" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-black/85 text-white/90 hover:text-white flex items-center justify-center transition-all border border-white/20 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-[#A34821] active:scale-95" aria-label="Previous photograph">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+
+        <!-- Indicator Bars Dock -->
+        <div class="flex items-center gap-2 px-3 sm:px-3.5 py-2 sm:py-2.5 bg-black/70 rounded-full border border-white/15">
+          <button class="hero-indicator h-1.5 w-6 sm:w-8 rounded-full bg-white transition-all duration-300" data-index="0" aria-label="Go to Courtyard slide"></button>
+          <button class="hero-indicator h-1.5 w-6 sm:w-8 rounded-full bg-white/35 hover:bg-white/70 transition-all duration-300" data-index="1" aria-label="Go to Interior slide"></button>
+          <button class="hero-indicator h-1.5 w-6 sm:w-8 rounded-full bg-white/35 hover:bg-white/70 transition-all duration-300" data-index="2" aria-label="Go to Brew Bar slide"></button>
+        </div>
+
+        <button id="hero-next" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-black/85 text-white/90 hover:text-white flex items-center justify-center transition-all border border-white/20 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-[#A34821] active:scale-95" aria-label="Next photograph">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
       </div>
 
     </section>
