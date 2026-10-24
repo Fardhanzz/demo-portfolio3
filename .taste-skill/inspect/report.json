@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:8080/",
- "at": "2026-10-24T03:20:40.970Z",
+ "at": "2026-10-24T05:40:40.829Z",
  "allow": [],
  "viewports": [
   {
@@ -17,9 +17,9 @@
     0.67
    ],
    "motion": {
-    "elements": 29,
+    "elements": 25,
     "css": 6,
-    "transitions": 22,
+    "transitions": 18,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -33,7 +33,7 @@
      "height": 5369,
      "screens": 6,
      "words": 599,
-     "img": 9,
+     "img": 10,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -42,18 +42,18 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 9,
+     "realPictures": 10,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "interior.jpg",
       "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "gallery-arch.jpg",
       "brunch.jpg",
-      "gallery-pourover.jpg",
-      "gallery-communal.jpg"
+      "gallery-pourover.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -442,7 +442,7 @@
      "blurred": 0,
      "roundedBoxes": 6,
      "boxRadius": 12,
-     "squareMedia": 4,
+     "squareMedia": 5,
      "roundedMedia": 5,
      "mediaRadius": 12,
      "textShadow": 0,
@@ -451,7 +451,7 @@
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.92
+      "ratio": 0.9
      }
     ],
     "nav": {
@@ -483,7 +483,7 @@
       "top": 88,
       "height": 846,
       "words": 47,
-      "media": 2,
+      "media": 5,
       "middle": 121,
       "heading": {
        "text": "SENJA",
@@ -710,9 +710,9 @@
     0.89
    ],
    "motion": {
-    "elements": 29,
+    "elements": 25,
     "css": 6,
-    "transitions": 22,
+    "transitions": 18,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -726,7 +726,7 @@
      "height": 7058,
      "screens": 6.9,
      "words": 599,
-     "img": 9,
+     "img": 10,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -735,18 +735,18 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 9,
+     "realPictures": 10,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "interior.jpg",
       "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "gallery-arch.jpg",
       "brunch.jpg",
-      "gallery-pourover.jpg",
-      "gallery-communal.jpg"
+      "gallery-pourover.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1135,7 +1135,7 @@
      "blurred": 0,
      "roundedBoxes": 6,
      "boxRadius": 12,
-     "squareMedia": 4,
+     "squareMedia": 5,
      "roundedMedia": 5,
      "mediaRadius": 12,
      "textShadow": 0,
@@ -1144,11 +1144,7 @@
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.52
-     },
-     {
-      "type": "img",
-      "ratio": 0.38
+      "ratio": 0.86
      }
     ],
     "nav": {
@@ -1179,8 +1175,8 @@
       "tag": "section",
       "top": 108,
       "height": 881,
-      "words": 46,
-      "media": 2,
+      "words": 47,
+      "media": 5,
       "middle": 0,
       "heading": {
        "text": "SENJA",
@@ -1188,9 +1184,9 @@
        "tag": "h1"
       },
       "left": 24,
-      "right": 122,
+      "right": 104,
       "textLeft": 24,
-      "textRight": 122,
+      "textRight": 104,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1396,9 +1392,9 @@
     1
    ],
    "motion": {
-    "elements": 29,
+    "elements": 26,
     "css": 6,
-    "transitions": 22,
+    "transitions": 19,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -1412,7 +1408,7 @@
      "height": 7586,
      "screens": 9,
      "words": 587,
-     "img": 9,
+     "img": 10,
      "video": 0,
      "canvas": 0,
      "svg": 2,
@@ -1421,18 +1417,18 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 9,
+     "realPictures": 10,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "interior.jpg",
       "gallery-pourover.jpg",
       "gallery-courtyard.jpg",
       "gallery-arch.jpg",
       "brunch.jpg",
-      "gallery-pourover.jpg",
-      "gallery-communal.jpg"
+      "gallery-pourover.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1946,7 +1942,7 @@
      "blurred": 0,
      "roundedBoxes": 6,
      "boxRadius": 12,
-     "squareMedia": 4,
+     "squareMedia": 5,
      "roundedMedia": 5,
      "mediaRadius": 12,
      "textShadow": 0,
@@ -1955,7 +1951,7 @@
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.88
+      "ratio": 0.86
      }
     ],
     "nav": {
@@ -1987,7 +1983,7 @@
       "top": 88,
       "height": 726,
       "words": 46,
-      "media": 2,
+      "media": 5,
       "middle": 7,
       "heading": {
        "text": "SENJA",

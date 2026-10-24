@@ -180,38 +180,47 @@
       <div class="absolute inset-0 z-0 overflow-hidden">
         <div 
           id="hero-track" 
-          class="flex w-[400%] h-full will-change-transform" 
-          style="transform: translateX(0%); transition: transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);"
+          class="flex w-[500%] h-full will-change-transform" 
+          style="transform: translateX(-20%);"
         >
-          <!-- Slide 1: Courtyard Garden Sanctuary -->
-          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="0">
+          <!-- Sentinel Clone of Slide 3 (Pour-Over Coffee Ritual) at position 0 -->
+          <div class="w-1/5 h-full relative flex-shrink-0 hero-slide overflow-hidden" aria-hidden="true">
+            <img 
+              src="./images/gallery-pourover.jpg" 
+              alt="" 
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05]"
+            />
+          </div>
+
+          <!-- Slide 1: Courtyard Garden Sanctuary (Real Index 0) at position 1 -->
+          <div class="w-1/5 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="0">
             <img 
               src="./images/gallery-courtyard.jpg" 
               alt="Sunlit tropical courtyard garden at SENJA Café &amp; Kitchen on Jalan Riau, Bandung" 
-              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05]"
             />
           </div>
 
-          <!-- Slide 2: Warm Limewash Interior & Hearth Dining -->
-          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="1">
+          <!-- Slide 2: Warm Limewash Interior & Hearth Dining (Real Index 1) at position 2 -->
+          <div class="w-1/5 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="1">
             <img 
               src="./images/interior.jpg" 
               alt="Warm limewash arches and sunlit teak dining tables at SENJA Café &amp; Kitchen" 
-              class="w-full h-full object-cover filter brightness-[0.72] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+              class="w-full h-full object-cover filter brightness-[0.72] contrast-[1.05]"
             />
           </div>
 
-          <!-- Slide 3: Handcrafted Pour-Over Coffee Ritual -->
-          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="2">
+          <!-- Slide 3: Handcrafted Pour-Over Coffee Ritual (Real Index 2) at position 3 -->
+          <div class="w-1/5 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="2">
             <img 
               src="./images/gallery-pourover.jpg" 
               alt="Barista brewing single-origin Kalita Wave filter coffee at reclaimed timber bar" 
-              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05]"
             />
           </div>
 
-          <!-- Slide 4: Infinite loop anchor (clone of Slide 1) -->
-          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" aria-hidden="true">
+          <!-- Sentinel Clone of Slide 1 (Courtyard Garden Sanctuary) at position 4 -->
+          <div class="w-1/5 h-full relative flex-shrink-0 hero-slide overflow-hidden" aria-hidden="true">
             <img 
               src="./images/gallery-courtyard.jpg" 
               alt="" 
@@ -687,7 +696,7 @@
         }, 2500);
       }
 
-      // Hero Background Sliding Track Controller (4s interval)
+      // Hero Background Sliding Track Controller (Seamless Infinite Loop)
       const slider = document.getElementById('hero-slider');
       const track = document.getElementById('hero-track');
       const prevBtn = document.getElementById('hero-prev');
@@ -696,86 +705,91 @@
       const barButtons = document.querySelectorAll('.hero-indicator');
 
       if (slider && track) {
-        const slides = track.querySelectorAll('.hero-slide');
         const captions = [
           "Courtyard Garden Sanctuary",
           "Hearth Dining & Conservatory Arches",
           "Single-Origin Priangan Brew Bar"
         ];
         const TOTAL_UNIQUE_SLIDES = 3;
-        let currentIndex = 0;
+        // Track layout (5 slides, width 500%, 20% each):
+        // Pos 0: Sentinel clone of Slide 2 (Brew Bar)
+        // Pos 1: Slide 0 (Courtyard Garden Sanctuary)  <-- Initial position
+        // Pos 2: Slide 1 (Hearth Dining)
+        // Pos 3: Slide 2 (Brew Bar)
+        // Pos 4: Sentinel clone of Slide 0 (Courtyard)
+        let trackPosition = 1;
         let isTransitioning = false;
         let autoInterval = null;
         const AUTOPLAY_DELAY = 4000;
+        const SLIDE_DURATION = 900; // ms
 
-        function updateSlide(targetIndex, animate = true) {
-          if (animate) {
-            isTransitioning = true;
-            track.style.transition = 'transform 1000ms cubic-bezier(0.22, 1, 0.36, 1)';
-          } else {
-            track.style.transition = 'none';
-          }
+        // Map trackPosition (0..4) to logical slide index (0..2)
+        function getLogicalIndex(pos) {
+          if (pos === 0) return 2; // Clone of slide 2
+          if (pos === 4) return 0; // Clone of slide 0
+          return pos - 1;
+        }
 
-          track.style.transform = `translateX(-${targetIndex * 25}%)`;
-
-          const displayIndex = targetIndex % TOTAL_UNIQUE_SLIDES;
+        function updateUI(logicalIndex) {
           if (captionEl) {
             captionEl.style.opacity = '0';
             setTimeout(() => {
-              captionEl.textContent = captions[displayIndex];
+              captionEl.textContent = captions[logicalIndex];
               captionEl.style.opacity = '1';
-            }, 200);
+            }, 180);
           }
           if (barButtons && barButtons.length) {
             barButtons.forEach((btn, i) => {
-              if (i === displayIndex) {
+              if (i === logicalIndex) {
                 btn.classList.add('bg-white');
-                btn.classList.remove('bg-white/30');
+                btn.classList.remove('bg-white/35');
               } else {
                 btn.classList.remove('bg-white');
-                btn.classList.add('bg-white/30');
+                btn.classList.add('bg-white/35');
               }
             });
           }
+        }
 
-          // Subtle Ken-burns scale effect on active slide
-          slides.forEach((slide, idx) => {
-            const img = slide.querySelector('img');
-            if (img) {
-              if (idx === targetIndex || (targetIndex === 3 && idx === 0)) {
-                img.style.transform = 'scale(1.05)';
-              } else {
-                img.style.transform = 'scale(1)';
-              }
-            }
-          });
+        function moveToPosition(pos, animate = true) {
+          trackPosition = pos;
+          if (animate) {
+            isTransitioning = true;
+            track.style.transition = `transform ${SLIDE_DURATION}ms cubic-bezier(0.16, 1, 0.3, 1)`;
+          } else {
+            track.style.transition = 'none';
+          }
+          track.style.transform = `translateX(-${trackPosition * 20}%)`;
+          if (animate) {
+            updateUI(getLogicalIndex(trackPosition));
+          }
         }
 
         function nextSlide() {
           if (isTransitioning) return;
-          currentIndex++;
-          updateSlide(currentIndex, true);
+          moveToPosition(trackPosition + 1, true);
         }
 
         function prevSlide() {
           if (isTransitioning) return;
-          if (currentIndex === 0) {
-            // Jump to clone anchor first, then smoothly slide to index 2
-            currentIndex = TOTAL_UNIQUE_SLIDES;
-            updateSlide(currentIndex, false);
-            void track.offsetWidth; // force reflow
-          }
-          currentIndex--;
-          updateSlide(currentIndex, true);
+          moveToPosition(trackPosition - 1, true);
         }
 
-        // When transition ends on clone slide 3 (identical to slide 0), silently reset to slide 0
-        track.addEventListener('transitionend', () => {
+        // Seamless Infinite Loop Boundary Reset on transitionend
+        track.addEventListener('transitionend', (e) => {
+          // Strictly filter so only track transform triggers reset
+          if (e.target !== track || e.propertyName !== 'transform') return;
           isTransitioning = false;
-          if (currentIndex >= TOTAL_UNIQUE_SLIDES) {
-            currentIndex = 0;
-            updateSlide(0, false);
-            void track.offsetWidth; // force reflow
+
+          // If reached forward sentinel (pos 4 = clone of slide 0), silently jump to pos 1 (real slide 0)
+          if (trackPosition === 4) {
+            moveToPosition(1, false);
+            void track.offsetWidth; // flush styles synchronously
+          }
+          // If reached backward sentinel (pos 0 = clone of slide 2), silently jump to pos 3 (real slide 2)
+          else if (trackPosition === 0) {
+            moveToPosition(3, false);
+            void track.offsetWidth;
           }
         });
 
@@ -792,11 +806,14 @@
         if (barButtons) {
           barButtons.forEach((btn) => {
             btn.addEventListener('click', () => {
+              if (isTransitioning) return;
               const idx = parseInt(btn.dataset.index, 10);
-              if (!isNaN(idx) && idx !== currentIndex && !isTransitioning) {
-                currentIndex = idx;
-                updateSlide(currentIndex, true);
-                resetTimer();
+              if (!isNaN(idx)) {
+                const targetPos = idx + 1;
+                if (targetPos !== trackPosition) {
+                  moveToPosition(targetPos, true);
+                  resetTimer();
+                }
               }
             });
           });
@@ -826,8 +843,18 @@
         slider.addEventListener('touchstart', stopTimer, { passive: true });
         slider.addEventListener('touchend', startTimer, { passive: true });
 
-        // Initialize active state
-        updateSlide(0, false);
+        // Pause autoplay if user switches tabs to prevent queued animation bursts
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            stopTimer();
+          } else {
+            startTimer();
+          }
+        });
+
+        // Initialize active state at position 1 (real slide 0)
+        moveToPosition(1, false);
+        updateUI(0);
         startTimer();
       }
     });
