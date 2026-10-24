@@ -56,8 +56,10 @@
     /* Monumental Hero Name */
     .wordmark-monument {
       font-size: clamp(68px, 17vw, 220px);
-      line-height: 0.85;
+      line-height: 1.0;
       letter-spacing: -0.04em;
+      position: relative;
+      z-index: 30;
     }
 
     /* Motion Layer: Entrance & Scroll Reveals */
@@ -172,21 +174,58 @@
   <main class="flex-grow">
 
     <!-- 1. HERO: The Name as Monument (h1) & Full-Bleed Atmosphere -->
-    <section class="relative w-full bg-[#191712] text-[#F5F3EF] overflow-hidden min-h-[86vh] lg:min-h-[94vh] flex flex-col justify-between">
+    <section class="relative w-full bg-[#191712] text-[#F5F3EF] overflow-hidden min-h-[86vh] lg:min-h-[94vh] flex flex-col justify-between" id="hero-slider" aria-roledescription="carousel" aria-label="SENJA Café atmosphere gallery">
       
-      <!-- Full-bleed Atmosphere Photography -->
-      <div class="absolute inset-0 z-0">
-        <img 
-          src="./images/gallery-courtyard.jpg" 
-          alt="Sunlit tropical courtyard garden at SENJA Café &amp; Kitchen on Jalan Riau, Bandung" 
-          class="w-full h-full object-cover filter brightness-[0.76] contrast-[1.05]"
-          priority
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-[#191712] via-transparent to-black/35"></div>
+      <!-- Full-bleed Sliding Atmosphere Photography Track -->
+      <div class="absolute inset-0 z-0 overflow-hidden">
+        <div 
+          id="hero-track" 
+          class="flex w-[400%] h-full will-change-transform" 
+          style="transform: translateX(0%); transition: transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);"
+        >
+          <!-- Slide 1: Courtyard Garden Sanctuary -->
+          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="0">
+            <img 
+              src="./images/gallery-courtyard.jpg" 
+              alt="Sunlit tropical courtyard garden at SENJA Café &amp; Kitchen on Jalan Riau, Bandung" 
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+            />
+          </div>
+
+          <!-- Slide 2: Warm Limewash Interior & Hearth Dining -->
+          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="1">
+            <img 
+              src="./images/interior.jpg" 
+              alt="Warm limewash arches and sunlit teak dining tables at SENJA Café &amp; Kitchen" 
+              class="w-full h-full object-cover filter brightness-[0.72] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+            />
+          </div>
+
+          <!-- Slide 3: Handcrafted Pour-Over Coffee Ritual -->
+          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" data-slide-index="2">
+            <img 
+              src="./images/gallery-pourover.jpg" 
+              alt="Barista brewing single-origin Kalita Wave filter coffee at reclaimed timber bar" 
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05] transition-transform duration-[6000ms] ease-out scale-100"
+            />
+          </div>
+
+          <!-- Slide 4: Infinite loop anchor (clone of Slide 1) -->
+          <div class="w-1/4 h-full relative flex-shrink-0 hero-slide overflow-hidden" aria-hidden="true">
+            <img 
+              src="./images/gallery-courtyard.jpg" 
+              alt="" 
+              class="w-full h-full object-cover filter brightness-[0.74] contrast-[1.05]"
+            />
+          </div>
+        </div>
+
+        <!-- Atmospheric Gradient Scrim -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#191712] via-black/25 to-black/45 z-10 pointer-events-none"></div>
       </div>
 
       <!-- Top Row Details -->
-      <div class="relative z-10 px-6 lg:px-12 py-8">
+      <div class="relative z-20 px-6 lg:px-12 py-8">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" data-rise style="--delay: 1;">
           <div class="max-w-md">
             <p class="text-base sm:text-lg font-light text-white/95 leading-snug">
@@ -194,25 +233,25 @@
             </p>
           </div>
           <div class="flex items-center gap-3 text-sm text-white/90">
-            <span>Daily 07:00 – 22:00</span>
+            <span id="hero-slide-caption" class="transition-opacity duration-300">Courtyard Garden Sanctuary</span>
             <span>•</span>
-            <span>Walk-ins welcome</span>
+            <span>Daily 07:00 – 22:00</span>
           </div>
         </div>
       </div>
 
       <!-- Bottom Monumental Wordmark & Action -->
-      <div class="relative z-10 px-6 lg:px-12 pb-10">
+      <div class="relative z-30 px-6 lg:px-12 pb-10">
         <div class="max-w-6xl mx-auto space-y-6">
           
           <!-- Monument Name is the H1 of the page at the top of the block -->
-          <div class="select-none overflow-hidden">
-            <h1 class="wordmark-monument font-serif font-bold text-white tracking-tight block" data-rise style="--delay: 2;">
+          <div class="select-none overflow-hidden relative z-30">
+            <h1 class="wordmark-monument font-serif font-bold text-white tracking-tight block relative z-30" data-rise style="--delay: 2;">
               SENJA
             </h1>
           </div>
 
-          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-2 relative z-30">
             <div class="max-w-2xl space-y-2">
               <p class="text-2xl sm:text-3xl font-serif text-white/95 font-normal leading-tight" data-rise style="--delay: 3;">
                 Bandung's Sanctuary of Golden Light.
@@ -222,13 +261,33 @@
               </p>
             </div>
 
-            <div class="flex flex-wrap items-center gap-4">
-              <a href="/menu" class="px-7 py-3.5 bg-[#A34821] text-white text-sm font-medium rounded hover:bg-[#7E3314] transition-colors" data-rise style="--delay: 5;">
-                Explore Menu
-              </a>
-              <a href="/visit" class="px-7 py-3.5 bg-white/10 text-white text-sm font-medium rounded hover:bg-white/20 transition-colors backdrop-blur-sm" data-rise style="--delay: 6;">
-                Visit Sanctuary
-              </a>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+              <div class="flex flex-wrap items-center gap-4">
+                <a href="/menu" class="px-7 py-3.5 bg-[#A34821] text-white text-sm font-medium rounded hover:bg-[#7E3314] transition-colors" data-rise style="--delay: 5;">
+                  Explore Menu
+                </a>
+                <a href="/visit" class="px-7 py-3.5 bg-white/15 text-white text-sm font-medium rounded hover:bg-white/25 transition-colors border border-white/20" data-rise style="--delay: 6;">
+                  Visit Sanctuary
+                </a>
+              </div>
+
+              <!-- Editorial Slider Controls & Progress Indicators -->
+              <div class="flex items-center gap-3 pt-1 sm:pt-0" data-rise style="--delay: 6;">
+                <button id="hero-prev" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-[#A34821]" aria-label="Previous photograph">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+
+                <!-- Indicator Bars -->
+                <div class="flex items-center gap-2 px-3 py-2.5 bg-black/60 rounded-full">
+                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white transition-all duration-300" data-index="0" aria-label="Go to Courtyard slide"></button>
+                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="1" aria-label="Go to Interior slide"></button>
+                  <button class="hero-indicator h-1.5 w-7 rounded-full bg-white/30 hover:bg-white/60 transition-all duration-300" data-index="2" aria-label="Go to Brew Bar slide"></button>
+                </div>
+
+                <button id="hero-next" class="w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 text-white flex items-center justify-center transition-all focus:outline-none focus:ring-2 focus:ring-[#A34821]" aria-label="Next photograph">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -627,6 +686,150 @@
         setTimeout(() => {
           targets.forEach(el => el.classList.add('is-in'));
         }, 2500);
+      }
+
+      // Hero Background Sliding Track Controller (4s interval)
+      const slider = document.getElementById('hero-slider');
+      const track = document.getElementById('hero-track');
+      const prevBtn = document.getElementById('hero-prev');
+      const nextBtn = document.getElementById('hero-next');
+      const captionEl = document.getElementById('hero-slide-caption');
+      const barButtons = document.querySelectorAll('.hero-indicator');
+
+      if (slider && track) {
+        const slides = track.querySelectorAll('.hero-slide');
+        const captions = [
+          "Courtyard Garden Sanctuary",
+          "Hearth Dining & Conservatory Arches",
+          "Single-Origin Priangan Brew Bar"
+        ];
+        const TOTAL_UNIQUE_SLIDES = 3;
+        let currentIndex = 0;
+        let isTransitioning = false;
+        let autoInterval = null;
+        const AUTOPLAY_DELAY = 4000;
+
+        function updateSlide(targetIndex, animate = true) {
+          if (animate) {
+            isTransitioning = true;
+            track.style.transition = 'transform 1000ms cubic-bezier(0.22, 1, 0.36, 1)';
+          } else {
+            track.style.transition = 'none';
+          }
+
+          track.style.transform = `translateX(-${targetIndex * 25}%)`;
+
+          const displayIndex = targetIndex % TOTAL_UNIQUE_SLIDES;
+          if (captionEl) {
+            captionEl.style.opacity = '0';
+            setTimeout(() => {
+              captionEl.textContent = captions[displayIndex];
+              captionEl.style.opacity = '1';
+            }, 200);
+          }
+          if (barButtons && barButtons.length) {
+            barButtons.forEach((btn, i) => {
+              if (i === displayIndex) {
+                btn.classList.add('bg-white');
+                btn.classList.remove('bg-white/30');
+              } else {
+                btn.classList.remove('bg-white');
+                btn.classList.add('bg-white/30');
+              }
+            });
+          }
+
+          // Subtle Ken-burns scale effect on active slide
+          slides.forEach((slide, idx) => {
+            const img = slide.querySelector('img');
+            if (img) {
+              if (idx === targetIndex || (targetIndex === 3 && idx === 0)) {
+                img.style.transform = 'scale(1.05)';
+              } else {
+                img.style.transform = 'scale(1)';
+              }
+            }
+          });
+        }
+
+        function nextSlide() {
+          if (isTransitioning) return;
+          currentIndex++;
+          updateSlide(currentIndex, true);
+        }
+
+        function prevSlide() {
+          if (isTransitioning) return;
+          if (currentIndex === 0) {
+            // Jump to clone anchor first, then smoothly slide to index 2
+            currentIndex = TOTAL_UNIQUE_SLIDES;
+            updateSlide(currentIndex, false);
+            void track.offsetWidth; // force reflow
+          }
+          currentIndex--;
+          updateSlide(currentIndex, true);
+        }
+
+        // When transition ends on clone slide 3 (identical to slide 0), silently reset to slide 0
+        track.addEventListener('transitionend', () => {
+          isTransitioning = false;
+          if (currentIndex >= TOTAL_UNIQUE_SLIDES) {
+            currentIndex = 0;
+            updateSlide(0, false);
+            void track.offsetWidth; // force reflow
+          }
+        });
+
+        if (nextBtn) nextBtn.addEventListener('click', () => {
+          nextSlide();
+          resetTimer();
+        });
+
+        if (prevBtn) prevBtn.addEventListener('click', () => {
+          prevSlide();
+          resetTimer();
+        });
+
+        if (barButtons) {
+          barButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const idx = parseInt(btn.dataset.index, 10);
+              if (!isNaN(idx) && idx !== currentIndex && !isTransitioning) {
+                currentIndex = idx;
+                updateSlide(currentIndex, true);
+                resetTimer();
+              }
+            });
+          });
+        }
+
+        function startTimer() {
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (prefersReduced) return;
+          stopTimer();
+          autoInterval = setInterval(nextSlide, AUTOPLAY_DELAY);
+        }
+
+        function stopTimer() {
+          if (autoInterval) {
+            clearInterval(autoInterval);
+            autoInterval = null;
+          }
+        }
+
+        function resetTimer() {
+          stopTimer();
+          startTimer();
+        }
+
+        slider.addEventListener('mouseenter', stopTimer);
+        slider.addEventListener('mouseleave', startTimer);
+        slider.addEventListener('touchstart', stopTimer, { passive: true });
+        slider.addEventListener('touchend', startTimer, { passive: true });
+
+        // Initialize active state
+        updateSlide(0, false);
+        startTimer();
       }
     });
   </script>
