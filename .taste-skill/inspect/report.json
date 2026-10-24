@@ -1,0 +1,2217 @@
+{
+ "url": "http://localhost:8080/",
+ "at": "2026-10-24T02:53:27.621Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.94,
+    0.41,
+    1,
+    0.42,
+    0.78,
+    0.67
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 6,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5369,
+     "screens": 6,
+     "words": 596,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "gallery-courtyard.jpg",
+      "gallery-arch.jpg",
+      "brunch.jpg",
+      "gallery-pourover.jpg",
+      "gallery-communal.jpg",
+      "coffee-table.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SENJA",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 220,
+     "vw": 15.3,
+     "font": "Playfair Display",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.8,
+     "top": 575,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SENJA",
+     "words": 1,
+     "lines": 1,
+     "size": 220,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 26,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 220,
+      "vw": 15.3,
+      "font": "Playfair Display",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 575,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bandung's Sanctuary of Golden Light.",
+      "words": 5,
+      "chars": 36,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 794,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The hours between work and home.",
+      "words": 6,
+      "chars": 32,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 1062,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From the Hearth & Brew Bar",
+      "words": 6,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1916,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three Moments, One Continuous Rhythm",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 2897,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A Frame for Everyday Life",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 3569,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good Things Are Happening Here.",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 4503,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 5027,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      24,
+      30,
+      36,
+      220
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 300,
+      "tracking": 0,
+      "contrast": 8.6
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 220,
+      "vw": 15.3,
+      "font": "Playfair Display",
+      "text": "SENJA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f5f3ef",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.23,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#191712",
+       "top": 88,
+       "hsl": {
+        "h": 43,
+        "s": 0.16,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#f5f3ef",
+       "top": 934,
+       "hsl": {
+        "h": 40,
+        "s": 0.23,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ede9e2",
+       "top": 1788,
+       "hsl": {
+        "h": 38,
+        "s": 0.23,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a453a",
+       "share": 0.57
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.21
+      },
+      {
+       "color": "#232019",
+       "share": 0.16
+      },
+      {
+       "color": "#a34821",
+       "share": 0.04
+      },
+      {
+       "color": "#e2c99d",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a34821",
+      "hsl": {
+       "h": 18,
+       "s": 0.66,
+       "l": 0.38
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 4,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Find Us",
+      "Explore Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 1,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 1,
+     "roundedMedia": 5,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.9
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5369,
+    "margins": {
+     "left": 144,
+     "right": 144
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 88,
+      "height": 846,
+      "words": 44,
+      "media": 1,
+      "middle": 232,
+      "heading": {
+       "text": "SENJA",
+       "size": 220,
+       "tag": "h1"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 144,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 934,
+      "height": 854,
+      "words": 137,
+      "media": 1,
+      "middle": 143,
+      "heading": {
+       "text": "The hours between work and home.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 175,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 1788,
+      "height": 981,
+      "words": 81,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "From the Hearth & Brew Bar",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 2769,
+      "height": 672,
+      "words": 140,
+      "media": 0,
+      "middle": 61,
+      "heading": {
+       "text": "Three Moments, One Continuous Rhythm",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 159,
+      "textLeft": 144,
+      "textRight": 159,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 3441,
+      "height": 822,
+      "words": 39,
+      "media": 2,
+      "middle": 32,
+      "heading": {
+       "text": "A Frame for Everyday Life",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 164,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 4263,
+      "height": 684,
+      "words": 79,
+      "media": 0,
+      "middle": 189,
+      "heading": {
+       "text": "Good Things Are Happening Here.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 264,
+      "textLeft": 144,
+      "textRight": 264,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.bg-[#191712]",
+      "tag": "footer",
+      "top": 4947,
+      "height": 422,
+      "words": 78,
+      "media": 0,
+      "middle": 49,
+      "heading": {
+       "text": "SENJA",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 192,
+      "right": 192,
+      "textLeft": 192,
+      "textRight": 192,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4132,
+      "height": 296
+     }
+    ],
+    "h1s": [
+     {
+      "text": "SENJA",
+      "size": 220,
+      "top": 575,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 144,
+      "n": 18
+     },
+     {
+      "x": 547,
+      "n": 2
+     },
+     {
+      "x": 748,
+      "n": 2
+     },
+     {
+      "x": 949,
+      "n": 2
+     },
+     {
+      "x": 835,
+      "n": 1
+     },
+     {
+      "x": 863,
+      "n": 1
+     },
+     {
+      "x": 893,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.82,
+    0.64,
+    0.88,
+    1,
+    0.55,
+    0.79,
+    0.89
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 6,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 7058,
+     "screens": 6.9,
+     "words": 596,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "gallery-courtyard.jpg",
+      "gallery-arch.jpg",
+      "brunch.jpg",
+      "gallery-pourover.jpg",
+      "gallery-communal.jpg",
+      "coffee-table.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SENJA",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 130.6,
+     "vw": 17,
+     "font": "Playfair Display",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 634,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SENJA",
+     "words": 1,
+     "lines": 1,
+     "size": 130.6,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 27,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 130.6,
+      "vw": 17,
+      "font": "Playfair Display",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 634,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bandung's Sanctuary of Golden Light.",
+      "words": 5,
+      "chars": 36,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 777,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The hours between work and home.",
+      "words": 6,
+      "chars": 32,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1085,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From the Hearth & Brew Bar",
+      "words": 6,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.74,
+      "top": 2703,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three Moments, One Continuous Rhythm",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4407,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A Frame for Everyday Life",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 5145,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good Things Are Happening Here.",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5815,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6670,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      24,
+      30,
+      36,
+      131
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 300,
+      "tracking": 0,
+      "contrast": 8.6
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 130.6,
+      "vw": 17,
+      "font": "Playfair Display",
+      "text": "SENJA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f5f3ef",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.23,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#191712",
+       "top": 108,
+       "hsl": {
+        "h": 43,
+        "s": 0.16,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#f5f3ef",
+       "top": 989,
+       "hsl": {
+        "h": 40,
+        "s": 0.23,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ede9e2",
+       "top": 2607,
+       "hsl": {
+        "h": 38,
+        "s": 0.23,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a453a",
+       "share": 0.57
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.21
+      },
+      {
+       "color": "#232019",
+       "share": 0.16
+      },
+      {
+       "color": "#a34821",
+       "share": 0.04
+      },
+      {
+       "color": "#e2c99d",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a34821",
+      "hsl": {
+       "h": 18,
+       "s": 0.66,
+       "l": 0.38
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 4,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Find Us",
+      "Explore Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 1,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 1,
+     "roundedMedia": 5,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.86
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": false,
+     "height": 108,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 7058,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 108,
+      "height": 881,
+      "words": 44,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "SENJA",
+       "size": 131,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 70,
+      "textLeft": 24,
+      "textRight": 70,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 989,
+      "height": 1619,
+      "words": 137,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The hours between work and home.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 2607,
+      "height": 1704,
+      "words": 81,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "From the Hearth & Brew Bar",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 4311,
+      "height": 738,
+      "words": 140,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three Moments, One Continuous Rhythm",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 40,
+      "textLeft": 24,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 5049,
+      "height": 670,
+      "words": 39,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "A Frame for Everyday Life",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 5719,
+      "height": 871,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good Things Are Happening Here.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 184,
+      "textLeft": 24,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.bg-[#191712]",
+      "tag": "footer",
+      "top": 6590,
+      "height": 468,
+      "words": 78,
+      "media": 0,
+      "middle": 13,
+      "heading": {
+       "text": "SENJA",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 46,
+      "textLeft": 24,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "SENJA",
+      "size": 131,
+      "top": 634,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 21
+     },
+     {
+      "x": 277,
+      "n": 2
+     },
+     {
+      "x": 531,
+      "n": 2
+     },
+     {
+      "x": 64,
+      "n": 1
+     },
+     {
+      "x": 400,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.83,
+    0.56,
+    0.82,
+    0.99,
+    0.56,
+    0.66,
+    0.84,
+    0.63,
+    1
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 6,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7586,
+     "screens": 9,
+     "words": 585,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "gallery-courtyard.jpg",
+      "gallery-arch.jpg",
+      "brunch.jpg",
+      "gallery-pourover.jpg",
+      "gallery-communal.jpg",
+      "coffee-table.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "SENJA",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 68,
+     "vw": 17.4,
+     "font": "Playfair Display",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 466,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "SENJA",
+     "words": 1,
+     "lines": 1,
+     "size": 68,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 26,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 68,
+      "vw": 17.4,
+      "font": "Playfair Display",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 466,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Bandung's Sanctuary of Golden Light.",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 556,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The hours between work and home.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 910,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From the Hearth & Brew Bar",
+      "words": 6,
+      "chars": 26,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2270,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Wild Sourdough Avocado Tartine",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 2831,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Toraja Sapan Single-Origin Kalita",
+      "words": 4,
+      "chars": 33,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 3315,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Three Moments, One Continuous Rhythm",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3679,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Morning Light & Quiet Pours",
+      "words": 5,
+      "chars": 27,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3927,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Shared Tables & Hearth Meals",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4183,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Senja Dusk & Twilight Pastry",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4439,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A Frame for Everyday Life",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4815,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Good Things Are Happening Here.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5833,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit Our Sanctuary",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 6244,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "SENJA",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6820,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      24,
+      30,
+      68
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 300,
+      "tracking": 0,
+      "contrast": 17.9
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 68,
+      "vw": 17.4,
+      "font": "Playfair Display",
+      "text": "SENJA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f5f3ef",
+     "bodyBgHsl": {
+      "h": 40,
+      "s": 0.23,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#191712",
+       "top": 88,
+       "hsl": {
+        "h": 43,
+        "s": 0.16,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#f5f3ef",
+       "top": 814,
+       "hsl": {
+        "h": 40,
+        "s": 0.23,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#ede9e2",
+       "top": 2174,
+       "hsl": {
+        "h": 38,
+        "s": 0.23,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a453a",
+       "share": 0.57
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.22
+      },
+      {
+       "color": "#232019",
+       "share": 0.16
+      },
+      {
+       "color": "#a34821",
+       "share": 0.04
+      },
+      {
+       "color": "#e2c99d",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#a34821",
+      "hsl": {
+       "h": 18,
+       "s": 0.66,
+       "l": 0.38
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 4,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Find Us",
+      "Explore Menu"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 1,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 1,
+     "roundedMedia": 5,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.86
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "plus jakarta sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7586,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 88,
+      "height": 726,
+      "words": 44,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "SENJA",
+       "size": 68,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 32,
+      "textLeft": 24,
+      "textRight": 32,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 814,
+      "height": 1360,
+      "words": 137,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The hours between work and home.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 2174,
+      "height": 1409,
+      "words": 81,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "From the Hearth & Brew Bar",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 3583,
+      "height": 1136,
+      "words": 140,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three Moments, One Continuous Rhythm",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 4719,
+      "height": 1018,
+      "words": 39,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "A Frame for Everyday Life",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-24.lg:py-32",
+      "tag": "section",
+      "top": 5737,
+      "height": 1003,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Good Things Are Happening Here.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.bg-[#191712]",
+      "tag": "footer",
+      "top": 6740,
+      "height": 846,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "SENJA",
+       "size": 30,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 41,
+      "textLeft": 24,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "SENJA",
+      "size": 68,
+      "top": 466,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 26
+     },
+     {
+      "x": 56,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f5f3ef, section #f5f3ef, section #ede9e2).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "D:\\CLIENT PROJECT\\Portfolio 3\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
